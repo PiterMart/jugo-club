@@ -1,13 +1,14 @@
 'use client'
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 import {motion} from 'framer-motion'
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <motion.div initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }} transition={{
+        whileInView={{ opacity: 1 }} transition={{
         ease: [0.65, 0, 0.35, 1],
         duration: 0.75,
         x: { duration: 0.25 }
@@ -25,21 +26,53 @@ export default function Home() {
         </div>
         <div className={styles.center}>
           <Image
+            className={styles.logo}
             src="/jugoClubLogo.png"
             alt='Jugo Club'
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '100vh', height: '100%',maxWidth: '800px', filter: 'invert(100%)'}}
+            placeholder="empty"
+            loading="lazy"
+            style={{position: 'fixed', height: 'auto', zIndex: "-1", marginTop: '20vh'}}
           />
         </div>
-        <div className={styles.page} style={{marginTop: '25vh'}}>
-        <p className={styles.title}>
-            JUGO CLUB VINOS NATURALES
-          </p>
-          <p className={styles.paragraph}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet leo quis nulla varius laoreet. Phasellus sed vehicula felis. Quisque felis urna, laoreet finibus ullamcorper scelerisque, maximus id nisi. Morbi commodo quam et purus lobortis facilisis. Donec convallis elementum tempus. Phasellus ornare varius sapien, vitae tristique ex egestas fermentum. Vivamus posuere, sapien vitae suscipit condimentum, lorem ligula posuere leo, id congue ligula enim a turpis. Vivamus eget diam quis dui ullamcorper volutpat ac vel orci. Donec elit eros, pretium sit amet est sit amet, porttitor ornare quam.
-          </p>
+        <div style={{height: '100VH'}}></div>
+        <div className={styles.page}>
+          <div className={styles.page__section} style={{paddingTop: '5rem'}}>
+            <p className={styles.title}>
+              SERVIMOS VINOS NATURALES
+            </p>
+            <div className={styles.center}>
+              <Link href="/about">
+                <p className={styles.button}>
+                  Lorem ipsum dolor sit amet
+                </p>
+              </Link>
+            </div>
+          </div>
+          <div className={styles.page__section}>
+            {/* <p className={styles.title}>
+              EVENTOS
+            </p> */}
+            <Image
+              src="/picturePlacehodler.png"
+              alt='Placeholder'
+              width={0}
+              height={0}
+              sizes="100vw"
+              placeholder="empty"
+              loading="lazy"
+              style={{height: "auto", width: "100%", maxWidth: "500px", margin: "auto"}}
+            />
+            <div className={styles.center}>
+              <Link href="/about">
+                <p className={styles.paragraph}>
+                  Lorem ipsum dolor sit amet 
+                </p>
+              </Link>
+            </div>
+          </div>
         </div>
       </motion.div>
     </main>

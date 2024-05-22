@@ -17,8 +17,8 @@ export default function Flecha({isActive, setIsActive}) {
             <Image
                 src="/wineBottle.png"
                 alt="menu"
-                width={80}
-                height={80}
+                width={55}
+                height={55}
                 priority
             />
         </motion.div>  
