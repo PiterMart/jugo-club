@@ -1,95 +1,47 @@
+'use client'
 import Image from "next/image";
 import styles from "./page.module.css";
+import {motion} from 'framer-motion'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
+      <motion.div initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }} transition={{
+        ease: [0.65, 0, 0.35, 1],
+        duration: 0.75,
+        x: { duration: 0.25 }
+      }}>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          <Image
+            src="/backgrounddemo.png"
+            alt="Background"
+            width={0}
+            height={0}
+            priority
+            unoptimized
+            style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none', }}
+          />
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+        <div className={styles.center}>
+          <Image
+            src="/jugoClubLogo.png"
+            alt='Jugo Club'
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100vh', height: '100%',maxWidth: '800px', filter: 'invert(100%)'}}
+          />
+        </div>
+        <div className={styles.page} style={{marginTop: '25vh'}}>
+        <p className={styles.title}>
+            JUGO CLUB VINOS NATURALES
           </p>
-        </a>
-      </div>
+          <p className={styles.paragraph}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet leo quis nulla varius laoreet. Phasellus sed vehicula felis. Quisque felis urna, laoreet finibus ullamcorper scelerisque, maximus id nisi. Morbi commodo quam et purus lobortis facilisis. Donec convallis elementum tempus. Phasellus ornare varius sapien, vitae tristique ex egestas fermentum. Vivamus posuere, sapien vitae suscipit condimentum, lorem ligula posuere leo, id congue ligula enim a turpis. Vivamus eget diam quis dui ullamcorper volutpat ac vel orci. Donec elit eros, pretium sit amet est sit amet, porttitor ornare quam.
+          </p>
+        </div>
+      </motion.div>
     </main>
   );
 }
