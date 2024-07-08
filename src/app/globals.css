@@ -1,4 +1,10 @@
 
+/*VARIABLES*/
+:root {
+  --primary:hsl(0, 38%, 31%) ;
+  --secondary: #ffffff;
+  --accent: #af6a6a  ;
+}
 * {
   box-sizing: border-box;
   padding: 0;

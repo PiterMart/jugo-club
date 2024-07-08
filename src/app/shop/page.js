@@ -3,9 +3,9 @@ import Image from "next/image";
 import styles from "../page.module.css";
 import Link from "next/link";
 import {motion} from 'framer-motion';
+import { Suspense } from "react";
 
-
-export default function Artists() {
+export default function Contact() {
 
     return (
       <main className={styles.main}>
@@ -17,9 +17,11 @@ export default function Artists() {
           duration: 0.75,
           x: { duration: 0.25 }
         }}>
-          <div style={{width: '100vw', zIndex: '0'}}>
-            <iframe src="https://jugoclub.wine/productos" style={{height: '100vh', width: '100%', margin: '0'}} frameBorder="0" allowFullScreen></iframe>
-          </div>
+          <Suspense fallback={<p style={{color: 'white'}}>LOADING</p>}>
+            <div style={{width: '100vw', zIndex: '0', marginTop: '5rem'}}>
+              <iframe src="https://jugoclub.wine/productos" style={{height: '100vh', width: '100%', margin: '0'}} frameBorder="0" allowFullScreen></iframe>
+            </div>
+          </Suspense>
         </motion.div>
       </main>
     );

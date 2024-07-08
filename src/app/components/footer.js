@@ -10,7 +10,7 @@ export default function Footer(){
   return(
     <div className={styles.footer}>
         <div className={styles.button} style={{borderLeft: 'none', borderRight: 'none'}}>
-          <p className={styles.form}>UNITE A NUESTRO CLUB</p>
+          <p className={styles.form}>DESCUENTO PARA VISITANTES</p>
         </div>
       <div className={styles.center}>
         <Image
@@ -22,6 +22,7 @@ export default function Footer(){
           sizes="100vw"
           placeholder="empty"
           loading="lazy"
+          style={{marginBottom: '-5rem', marginTop: '-5rem'}}
         />
       </div>
       <div className={styles.footer__section}>
@@ -31,18 +32,7 @@ export default function Footer(){
           </p>
         </div>
       </div>
-      {/* <div className={styles.footer__section_container}>
-        <div className={styles.footer__section__navs}>
-          <div className={styles.footer__section}>
-            <p className={styles.subtitle}>KNOW MORE</p>
-            <p><Link href="/about">ABOUT</Link></p>
-            <p><Link href="/club">CLUB</Link></p>
-            <p><Link href="/events">EVENTS</Link></p>
-            <p><Link href="/shop">SHOP</Link></p>
-            <p><Link href="/contact">CONTACT</Link></p>
-          </div>
-        </div>
-      </div> */}
+
     </div> 
   )
 }

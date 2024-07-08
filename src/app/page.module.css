@@ -7,7 +7,7 @@
 }
 @font-face{
   font-family: "Vigo";
-  src: url('/fonts/Vigo-CurvaEmpaste100.otf') format('opentype');
+  src: url('/fonts/Vigo-Curva.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
@@ -37,26 +37,38 @@
   font-family: Vigo;
   font-weight: normal;
   font-size: 70px;
-  color: white;
+  color: var(--secondary);
 }
 .subtitle{
   font-family: Vigo;
-  font-weight: normal;
-  font-size: 30px;
-  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  color: var(--secondary);
 }
 .paragraph{
+  font-family: "Vigo";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 36px;
+  color: var(--secondary);
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.description{
   font-family: Urbanist;
   font-weight: normal;
   font-size: 20px;
-  color: white;
+  color: var(--secondary);
+  text-align: center;
+  padding-top: 5px;
 }
 .button{
-  font-family: Urbanist;
-  font-weight: normal;
-  font-size: 20px;
+  font-family: Vigo;
+  font-weight: bold;
+  font-size: 36px;
   width: auto;
-  color: white;
+  color: var(--secondary);
   border: 1px solid white;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -66,10 +78,11 @@
   transition: 0.3s;
   pointer-events: all;
   margin-top: 1.25rem;
+  border-radius: 10px;
 }
 .button:hover{
   color: black;
-  background-color: white;
+  background-color: var(--secondary);
 }
 .form{
   font-family: Vigo;
@@ -87,21 +100,25 @@
   max-width: 800px; 
   filter: invert(100%);
 }
-
+.division{
+  height: 10rem;
+  background: rgb(175,106,106);
+  background: linear-gradient(180deg, rgba(175,106,106,0) 0%, rgba(0,0,0,1) 100%);
+}
 /*NAVBAR*/
 .nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   width: 100%;
-  z-index: 5;
+  z-index: 1000;
   font-family: Vigo;
   margin: auto;
   background: #00000000;
-  color: white;
+  color: var(--secondary);
 }
 .nav__list{
   position: relative;
@@ -142,8 +159,10 @@
   width: 100%;
   z-index: 10;
   margin: auto;
-  color: white;
-  background: rgb(0,0,0);
+  /* color: var(--secondary);
+  background: var(--accent); */
+  background: rgb(175,106,106);
+  background: linear-gradient(180deg, rgba(175,106,106,1) 0%, rgba(0,0,0,1) 100%);
   text-align: center;
   font-family: Vigo;
 }
@@ -164,7 +183,7 @@
   margin-top: 2rem;
   margin: auto;
   width: 100%;
-  border-top: 1px solid white;
+  border-top: 1px solid var(--secondary);
 }
 .footer__section a:hover{
   animation-duration: 5ms;
@@ -184,24 +203,37 @@
   padding: 0rem;
 }
 .page{
-  background: black;
-  background: linear-gradient(0deg, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 94%);
+  /* background: 	var(--primary); */
+  /* background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 94%); */
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(175,106,106,1) 100%);
   width: 100vw;
   margin: 0;
   padding: 5em;
   text-align: center;
   padding: 0.5rem;
   padding-bottom: 5rem;
+  margin-top: 0rem;
+  /* background-image: url("/mosaic.svg"); */
 }
 .page__section{
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 50%;
   margin: auto;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
-  background-color: rgba(255, 255, 255, 0);
+  gap: 5rem;
+  margin-bottom: 5rem;
+  /* background-color: rgba(255, 255, 255, 0); */
+}
+.page__title{
+  font-family: Vigo;
+  font-weight: normal;
+  font-size: 70px;
+  color: white;
+  padding: 1rem;
 }
 
 /* Mobile */
@@ -233,10 +265,16 @@
   /*PAGE*/
   .page{
     width: 100%;
-    padding-top: 5rem;
   }
   .page__section{
     width: 90%;
+  }
+  .page__title{
+    font-family: Vigo;
+    font-weight: normal;
+    font-size: 26px;
+    color: white;
+    padding: 2rem;
   }
   
   /*NAVBAR*/
@@ -284,6 +322,9 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
+  .page__section{
+    max-width: 85%;
+  }
 
 }
 
