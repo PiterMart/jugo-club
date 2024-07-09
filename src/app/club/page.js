@@ -106,6 +106,13 @@ export default function Club() {
             </p>
             <p className={styles.paragraph}>  - Desde JUGO CLUB tenemos la intención de acercar al público este trabajo de investigación y su resultado a través del acceso al mismo y un sistema de suscripciones mensuales que constan no sólo de una selección curada de nuestras piezas favoritas puestas en diálogo entre sí, sino de un acercamiento didáctico y comprensivo a todos los matices que dan a cada botella su particularidad. Mes a mes entregaremos pequeños recortes de este archivo junto con la bio y el desglose de todas las notas y sensaciones que cada selección puede ofrecer.    - </p>
           </div>
+          <div className={styles.center}>
+              <Link href="/events">
+                <p className={styles.button}>
+                   JUGO CLUB EN CARNE Y HUESO
+                </p>
+              </Link>
+            </div>
           </div>
         </motion.div>
       </main>

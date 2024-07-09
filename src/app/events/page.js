@@ -56,7 +56,7 @@ export default function Events() {
                   style={{height: "auto", width: "100%", maxWidth: "450px", margin: 'auto'}}
                 />
               </div>
-              <p className={styles.paragraph}>  - es centrar nuestra labor en la experiencia. Ya sea en un ambiente íntimo o social, el ritual ancestral y único de compartir una bebida espirituosa se establece como un momento de realización de aquello que nos mancomuna con unx otrx.  - </p>
+              <p className={styles.paragraph}>  - es centrar nuestra labor en la experiencia, ya sea en un ambiente íntimo o social, el ritual ancestral y único de compartir una bebida espirituosa se establece como un momento de realización de aquello que nos mancomuna con un otrx.  - </p>
               <Image
                 src="/images/DSCF8950 2.jpg"
                 alt='Placeholder'
@@ -157,7 +157,7 @@ export default function Events() {
             <div className={styles.center}>
               <Link href="/shop">
                 <p className={styles.button}>
-                   VINOS NATURALES EN LA PUERTA DE TU CASA
+                   VINOS NATURALES EN LA PUERTA DE TU HOGAR
                 </p>
               </Link>
             </div>
