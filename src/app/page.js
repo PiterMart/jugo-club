@@ -14,24 +14,28 @@ export default function Home() {
         x: { duration: 0.25 }
       }}>
         <div>
-          {/* <Image
-            src="/backgrounddemo.png"
-            alt="Background"
-            width={0}
-            height={0}
-            priority
-            unoptimized
-            style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none', }}
-          /> */}
           <video autoPlay muted loop playsInline style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none', }}>
             <source src="/JUGCLUB AUDIO 1.mp4" />
           </video>
         </div>
-        <div style={{height: '100VH'}}></div>
-        <div className={styles.division}>
+        <div style={{height: '100VH'}}>
+        <div className={styles.center}>
+              <Link href="/shop">
+                <p className={styles.button} style={{marginTop: '80vh', LEFT: '0'}}>
+                   COMPRAR VINOS
+                </p>
+              </Link>
+              <a href="#start">
+                <p className={styles.button} style={{marginTop: '80vh', LEFT: '0'}}>
+                   SABER MÁS
+                </p>
+              </a>
+            </div>
+        </div>
+        <div className={styles.division} id="start">
         </div>
         <div className={styles.page}>
-        <marquee className={styles.paragraph} style={{ fontSize: '36px', background: 'rgb(175,106,106);', background: 'linear-gradient(180deg, rgba(175,106,106,0) 0%, rgba(0,0,0,1) 50%, rgba(113,68,68,0) 100%);', color: 'gray',}} loop="1" scrollamount="15">&#9829; Gracias por visitar JugoClub.com ! &#9829; Esperamos que tengas una agradable estadia ! &#9829; Conoce más acerca de tu club de jugos favorito y no olvides visitar la tienda para poder recibir vinos de nuestra seleccion especial en la puerta de tu hogar. &#9829; </marquee>
+        <marquee className={styles.paragraph} style={{ fontSize: '36px',  color: 'white',}} loop="1" scrollamount="15">&#9829; Gracias por visitar JugoClub.com ! &#9829; Esperamos que tengas una agradable estadia ! &#9829; Conoce más acerca de tu club de jugos favorito y no olvides visitar la tienda para poder recibir vinos de nuestra seleccion especial en la puerta de tu hogar. &#9829; </marquee>
           <div className={styles.page__section}>
             <p className={styles.title}>
               SERVIMOS VINOS NATURALES
@@ -58,7 +62,7 @@ export default function Home() {
                   sizes="100vw"
                   placeholder="empty"
                   loading="lazy"
-                  style={{height: "auto", width: "100%", maxWidth: "950px", margin: "auto", borderRadius: '10px'}}
+                  className={styles.single__image}
                 />
                 <div>
                     <p className={styles.description}>
@@ -75,7 +79,7 @@ export default function Home() {
             <Link href="/club">
               <div style={{textAlign: 'left', margin: 'auto',width: '100%', maxWidth: '800px'}}>  
                 <div>
-                  <div style={{display: 'flex', flexDirection: 'row', gap: '2rem', width: '100%', justifyContent: 'center'}}>
+                  <div className={styles.double__image_container}>
                     <Image
                       src="/images/RIES_2555.jpg"
                       alt='Placeholder'
@@ -84,7 +88,7 @@ export default function Home() {
                       sizes="100vw"
                       placeholder="empty"
                       loading="lazy"
-                      style={{height: "auto", width: "100%", maxWidth: "400px", borderRadius: '10px'}}
+                      className={styles.double__image}
                     />
                     <Image
                       src="/images/RIES_2702.jpg"
@@ -94,7 +98,7 @@ export default function Home() {
                       sizes="100vw"
                       placeholder="empty"
                       loading="lazy"
-                      style={{height: "auto", width: "100%", maxWidth: "400px", borderRadius: '10px'}}
+                      className={styles.double__image}
                     />
                   </div>
                     <p className={styles.description}>
@@ -119,7 +123,7 @@ export default function Home() {
                     sizes="100vw"
                     placeholder="empty"
                     loading="lazy"
-                    style={{height: "auto", width: "100%", maxWidth: "700px", margin: "auto", borderRadius: '10px'}}
+                    className={styles.single__image}
                   />
                 </div>
                 <div>

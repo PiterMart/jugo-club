@@ -34,7 +34,7 @@ export default function Events() {
           <div className={styles.page}>
             <div className={styles.page__section}>
               <p className={styles.subtitle}>Parte esencial de la misión por difundir el arte de la producción del vino natural y orgánico</p>
-              <div style={{display: 'flex', flexDirection: 'row', gap: '2rem', width: '100%', justifyContent: 'center'}}>
+              <div className={styles.double__image_container}>
                 <Image
                   src="/images/DSCF8976 2.jpg"
                   alt='Placeholder'
@@ -43,7 +43,7 @@ export default function Events() {
                   sizes="100vw"
                   placeholder="empty"
                   loading="lazy"
-                  style={{height: "auto", width: "100%", maxWidth: "450px", margin: 'auto'}}
+                  className={styles.double__image}
                 />
                 <Image
                   src="/images/DSCF8845 2.jpg"
@@ -53,7 +53,7 @@ export default function Events() {
                   sizes="100vw"
                   placeholder="empty"
                   loading="lazy"
-                  style={{height: "auto", width: "100%", maxWidth: "450px", margin: 'auto'}}
+                  className={styles.double__image}
                 />
               </div>
               <p className={styles.paragraph}>  - es centrar nuestra labor en la experiencia, ya sea en un ambiente íntimo o social, el ritual ancestral y único de compartir una bebida espirituosa se establece como un momento de realización de aquello que nos mancomuna con un otrx.  - </p>
@@ -65,7 +65,7 @@ export default function Events() {
                 sizes="100vw"
                 placeholder="empty"
                 loading="lazy"
-                style={{height: "auto", width: "100%", maxWidth: "950px", margin: "auto", }}
+                className={styles.single__image_panoramic}
               />
               <p className={styles.paragraph}>  - Teniendo esto en cuenta, desde Jugo Club elaboramos una serie de situaciones, ambientes, medios que muchas veces se adaptan a los formatos de eventos artísticos, gatherings, o cócteles especiales para las agendas de quienes busquen crear encuentros diseñados hasta el último detalle.   - </p>
               <Image
@@ -76,7 +76,7 @@ export default function Events() {
                 sizes="100vw"
                 placeholder="empty"
                 loading="lazy"
-                style={{height: "auto", width: "100%", maxWidth: "950px", margin: "auto", }}
+                className={styles.single__image_panoramic}
               />
               <p className={styles.paragraph}>  - Contamos con un portfolio de acompañamientos anteriores y estamos abiertos a llevar adelante futuras asistencias en la elaboración de esta clase de encuentros. Por consultas sobre experiencias anteriores o posibles diseños especiales de este servicio, escribir para más información.   - </p>
               <div className={styles.center}>
@@ -86,7 +86,7 @@ export default function Events() {
                 </p>
               </Link>
             </div>
-              <div style={{display: 'flex', flexDirection: 'row', gap: '2rem', width: '100%', justifyContent: 'center'}}>
+              <div className={styles.double__image_container}>
                 <Image
                   src="/images/sohohouse-bonet-felixniikado-baja-7.jpg"
                   alt='Placeholder'
@@ -95,7 +95,7 @@ export default function Events() {
                   sizes="100vw"
                   placeholder="empty"
                   loading="lazy"
-                  style={{height: "auto", width: "100%", maxWidth: "450px", margin: 'auto'}}
+                  className={styles.double__image}
                 />
                 <Image
                   src="/images/sohohouse-bonet-felixniikado-baja-40.jpg"
@@ -105,11 +105,11 @@ export default function Events() {
                   sizes="100vw"
                   placeholder="empty"
                   loading="lazy"
-                  style={{height: "auto", width: "100%", maxWidth: "450px", margin: 'auto'}}
+                  className={styles.double__image}
                 />
               </div>
               <p className={styles.subtitle}>Nuestros HQs tienen lugar en la <a href="https://es.wikipedia.org/wiki/Casa_de_Estudios_para_Artistas" target="_blank" style={{color: "black"}}>Casa de estudios para artistas</a> realizada por los arquitectos Antoni Bonet i Castellana, Horacio Vera Ramos y Abel López Chas en 1938</p>
-              <div style={{display: 'flex', flexDirection: 'row', gap: '2rem', width: '100%', justifyContent: 'center', justifyContent: 'center'}}>
+              <div className={styles.double__image_container}>
                 <Image
                   src="/images/DSCF8911 2.jpg"
                   alt='Placeholder'
@@ -118,7 +118,7 @@ export default function Events() {
                   sizes="100vw"
                   placeholder="empty"
                   loading="lazy"
-                  style={{height: "auto", width: "100%", maxWidth: "450px", margin: 'auto'}}
+                  className={styles.double__image}
                 />
                 <Image
                   src="/images/DSCF9035.jpg"
@@ -128,7 +128,7 @@ export default function Events() {
                   sizes="100vw"
                   placeholder="empty"
                   loading="lazy"
-                  style={{height: "auto", width: "100%", maxWidth: "450px", margin: 'auto'}}
+                  className={styles.double__image}
                 />
               </div>
               <p className={styles.paragraph}> - conformándose como un patrimonio único de la ciudad pensado desde sus orígenes como “un pequeño centro de relación”. Es nuestro espíritu rendirle honores a este primer impulso de idear una arquitectura relacional invocando un ambiente para la distensión y el encuentro. = </p>
@@ -140,7 +140,7 @@ export default function Events() {
                 sizes="100vw"
                 placeholder="empty"
                 loading="lazy"
-                style={{height: "auto", width: "100%", maxWidth: "950px", margin: "auto", }}
+                className={styles.single__image_panoramic}
               />
               <p className={styles.paragraph}>- En ocasiones muy especiales abrimos nuestro espacio para la realización de eventos que requieran de un lugar ideado para estos propósitos de una manera única. Desde catas a social events, a lo que el imaginario dicte, nuestras puertas están abiertas. -</p>
               <Image
@@ -151,7 +151,7 @@ export default function Events() {
                 sizes="100vw"
                 placeholder="empty"
                 loading="lazy"
-                style={{height: "auto", width: "100%", maxWidth: "950px", margin: "auto", }}
+                className={styles.single__image_panoramic}
               />
             </div>
             <div className={styles.center}>
