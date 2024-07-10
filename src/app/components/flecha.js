@@ -15,10 +15,10 @@ export default function Flecha({isActive, setIsActive}) {
             transition={{duration: 0.5, ease: [0.33, 1, 0.68, 1]}}
         >
             <Image
-                src="/wineBottle.png"
+                src="/jugocup.png"
                 alt="menu"
-                width={55}
-                height={55}
+                width={50}
+                height={50}
                 priority
             />
         </motion.div>  
