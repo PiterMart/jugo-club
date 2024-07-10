@@ -294,15 +294,15 @@ background: linear-gradient(180deg, rgba(209,176,100,1) 0%, rgba(171,49,49,1) 10
   .title{
     font-family: Vigo;
     font-weight: normal;
-    font-size: 26px;
+    font-size: 40px;
     color: white;
   }
   .paragraph{
     margin-top: 1rem;
-    font-size: 15px;
+    font-size: 20px;
   }
   .button{
-    font-size: 15px;
+    font-size: 20px;
     padding: .75rem;
   }
   .form{
@@ -314,19 +314,31 @@ background: linear-gradient(180deg, rgba(209,176,100,1) 0%, rgba(171,49,49,1) 10
     max-width: 500px; 
     filter: invert(100%);
   }
+  .subtitle{
+    font-size: 32px;
+  }
   /*PAGE*/
   .page{
     width: 100%;
   }
   .page__section{
-    width: 90%;
+    width: 100%;
+    max-width: 100%;
+    gap: 2rem;
   }
   .page__title{
     font-family: Vigo;
     font-weight: normal;
-    font-size: 26px;
+    font-size: 60px;
     color: white;
-    padding: 2rem;
+    padding: 1rem;
+  }
+
+  .double__image_container{
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
   }
   
   /*NAVBAR*/
@@ -361,7 +373,6 @@ background: linear-gradient(180deg, rgba(209,176,100,1) 0%, rgba(171,49,49,1) 10
       margin: 0px;
       margin-top: 2rem;
       padding: 1rem;
-      border-left: 1px solid rgba(255, 255, 255, 0.362);
     }
     .footer__section__navs{
       display: flex;

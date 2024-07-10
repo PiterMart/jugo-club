@@ -18,7 +18,7 @@ export default function Contact() {
         }}> */}
           <div className={styles.page}>
             <div className={styles.page__section}>
-              <p className={styles.page__title}>CONTACTO</p>
+              <p className={styles.page__title}>CONTACT</p>
               <div className={styles.button} style={{marging: '2rem', padding: '2.5rem'}}>
                 <p className={styles.form}>MATEO@JUGOCLUB.WINE</p>
               </div>

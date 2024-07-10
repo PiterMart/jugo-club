@@ -108,7 +108,7 @@ export default function Events() {
                   className={styles.double__image}
                 />
               </div>
-              <p className={styles.subtitle}>Nuestros HQs tienen lugar en la <a href="https://es.wikipedia.org/wiki/Casa_de_Estudios_para_Artistas" target="_blank" style={{color: "black"}}>Casa de estudios para artistas</a> realizada por los arquitectos Antoni Bonet i Castellana, Horacio Vera Ramos y Abel López Chas en 1938</p>
+              <p className={styles.subtitle}>Nuestros HQs tienen lugar en la <a href="https://es.wikipedia.org/wiki/Casa_de_Estudios_para_Artistas" target="_blank" style={{color: "#ab3131"}}>Casa de estudios para artistas</a> realizada por los arquitectos Antoni Bonet i Castellana, Horacio Vera Ramos y Abel López Chas en 1938</p>
               <div className={styles.double__image_container}>
                 <Image
                   src="/images/DSCF8911 2.jpg"
