@@ -8,14 +8,15 @@ export default function Contact() {
 
     return (
       <main className={styles.main}>
-        {/* <motion.div 
+        <motion.div 
           initial={{ opacity: 0 }} 
           whileInView={{ opacity: 1 }} 
           transition={{
-          ease: [0.65, 0, 0.35, 1],
-          duration: 0.75,
-          x: { duration: 0.25 }
-        }}> */}
+          ease: [0.33, 1, 0.68, 1],
+          duration: 1.05,
+          x: { duration: 1.55 },
+          delay: 0.75
+        }}>
           <div className={styles.page}>
             <div className={styles.page__section}>
               <p className={styles.page__title}>CONTACT</p>
@@ -44,7 +45,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-        {/* </motion.div> */}
+        </motion.div>
       </main>
     );
   }

@@ -13,9 +13,10 @@ export default function Club() {
           initial={{ opacity: 0 }} 
           whileInView={{ opacity: 1 }} 
           transition={{
-          ease: [0.65, 0, 0.35, 1],
-          duration: 0.75,
-          x: { duration: 0.25 }
+          ease: [0.33, 1, 0.68, 1],
+          duration: 1.05,
+          x: { duration: 1.55 },
+          delay: 0.75
         }}>
           {/* <div>
             <Image

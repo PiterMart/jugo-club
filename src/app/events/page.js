@@ -13,9 +13,10 @@ export default function Events() {
           initial={{ opacity: 0 }} 
           whileInView={{ opacity: 1 }} 
           transition={{
-          ease: [0.65, 0, 0.35, 1],
-          duration: 0.75,
-          x: { duration: 0.25 }
+          ease: [0.33, 1, 0.68, 1],
+          duration: 1.05,
+          x: { duration: 1.55 },
+          delay: 0.75
         }}>
           <div>
             <Image
@@ -25,7 +26,7 @@ export default function Events() {
               height={0}
               priority
               unoptimized
-              style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none' }}
+              style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '-5rem', pointerEvents: 'none' }}
             />
           </div>
           <div style={{height: '80vH'}}></div>

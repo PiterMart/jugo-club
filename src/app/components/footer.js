@@ -26,9 +26,9 @@ export default function Footer(){
         />
       </div>
       <div className={styles.footer__section_container}>
-      <p className={styles.button}>MATEO@JUGOCLUB.WINE</p>
+      <p className={styles.button}>CONTACT</p>
           <p className={styles.paragraph}>
-          En Jugo Club, nos enorgullecemos de ofrecer una cuidadosa selección de vinos argentinos que representan la esencia más auténtica y honesta de nuestra tierra. Somos un club comprometido con descubrir y compartir el mensaje único que cada productor transmite a través de sus botellas.
+            En Jugo Club, nos enorgullecemos de ofrecer una cuidadosa selección de vinos argentinos que representan la esencia más auténtica y honesta de nuestra tierra. Somos un club comprometido con descubrir y compartir el mensaje único que cada productor transmite a través de sus botellas.
           </p>
         </div>
       <div className={styles.footer__section}>

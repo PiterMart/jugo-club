@@ -1,9 +1,9 @@
 
 /*VARIABLES*/
 :root {
-  --primary:hsl(0, 38%, 31%) ;
-  --secondary: #ffffff;
-  --accent: #af6a6a  ;
+  --primary:hsl(0, 0%, 100%) ;
+  --secondary: #1c2429;
+  --accent: #e3384f  ;
 }
 * {
   box-sizing: border-box;
@@ -20,7 +20,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #ab3131;
+  background: #ffffff;
 }
 
 a {
