@@ -86,11 +86,12 @@ export default function About() {
                     style={{maxWidth: '550px'}}
                   />
                   <div className={styles.page__section2_paragraphcontainer}>
-                    {/* <p className={`${styles["big"]} ${styles["subtitle"]}`} style={{color: "#e3384f"}}>VINIFICACIÓN</p> */}
-                    <div>
+                    <p className={`${styles["big"]} ${styles["subtitle"]}`} style={{fontSize: "60px", color: "#e3384f"}}>VINIFICACIÓN</p>
+                    {/* <div>
                       <p className={styles.subtitle} style={{fontSize: "60px", textAlign: 'right'}}><span style={{color: '#e3384f '}}>VINI-</span></p>
-                      <p className={styles.subtitle} style={{fontSize: "60px"}}><span style={{color: '#e3384f '}}>FICACIÓN</span></p>
-                    </div>
+                      <p className={styles.subtitle} style={{fontSize: "60px"}}><span style={{color: '#e3384f '}}>FICA-</span></p>
+                      <p className={styles.subtitle} style={{fontSize: "60px"}}><span style={{color: '#e3384f '}}>CIÓN</span></p>
+                    </div> */}
                     <p className={styles.paragraph2} style={{fontWeight: 'lighter'}}> <span className={styles.paragraph_arrow}>&#8594;</span>La transformación de la uva en vino es un <span style={{color: '#e3384f '}}>proceso delicado y respetuoso.</span> En la <span style={{fontWeight: 'bold'}}>vinificación natural,</span> las uvas se procesan utilizando sus propias <span style={{fontWeight: 'bold'}}>levaduras indígenas o autóctonas,</span> sin levaduras de laboratorio ni la adición de químicos. Este <span style={{fontWeight: 'bold'}}>método minimalista</span> permite que el vino desarrolle su <span style={{fontWeight: 'bold'}}>verdadero carácter,</span> resultando en una <span style={{color: '#e3384f '}} >bebida viva y saludable... </span> </p>
                   </div>
                 </div>
