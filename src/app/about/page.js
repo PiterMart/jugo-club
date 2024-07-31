@@ -54,7 +54,7 @@ export default function About() {
               
               <div style={{borderBottom: '1px solid black', paddingBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '5rem' }} className={styles.page__section_paragraphcontainer}>
                 <div>
-                <p className={styles.subtitle}>Somos <span style={{color: '#e3384f '}}>Cavistas de oficio,</span> especializados en la curaduría y manejo de una selección atípica, tendiendo puentes con pequeños productores con una impronta irreverente.</p>
+                <p className={styles.subtitle}>Somos <span style={{color: '#e3384f '}}>Cavistas de oficio</span>, especializados en la curaduría y manejo de una selección atípica, tendiendo puentes con pequeños productores con una impronta irreverente.</p>
                 </div>
                 <div className={styles.double__image_container}>
                 <div style={{width: '100%'}}>
