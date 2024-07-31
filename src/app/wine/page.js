@@ -85,11 +85,10 @@ export default function About() {
                     style={{maxWidth: '500px'}}
                   />
                   <div className={styles.page__section2_paragraphcontainer}>
-                    <p className={styles.subtitle}style={{marginTop: '0px', textWrap: 'wrap', color: '#e3384f', fontSize: "55px"}}>VINIFICACIÓN</p>
+                    <p className={`${styles["big"]} ${styles["subtitle"]}`} style={{color: "#e3384f"}}>VINIFICACIÓN</p>
                     <p className={styles.paragraph2} style={{fontWeight: 'lighter'}}> <span className={styles.paragraph_arrow}>&#8594;</span>La transformación de la uva en vino es un <span style={{color: '#e3384f '}}>proceso delicado y respetuoso.</span> En la <span style={{fontWeight: 'bold'}}>vinificación natural,</span> las uvas se procesan utilizando sus propias <span style={{fontWeight: 'bold'}}>levaduras indígenas o autóctonas,</span> sin levaduras de laboratorio ni la adición de químicos. Este <span style={{fontWeight: 'bold'}}>método minimalista</span> permite que el vino desarrolle su <span style={{fontWeight: 'bold'}}>verdadero carácter,</span> resultando en una <span style={{color: '#e3384f '}} >bebida viva y saludable... </span> </p>
                   </div>
                 </div>
-                
               </div>
               <div style={{borderBottom: '1px solid black', marginBottom: '5rem'}} className={styles.page__section4}>
               <div className={styles.page__section2}>

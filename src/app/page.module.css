@@ -434,7 +434,7 @@
     font-size: 30px;
   }
   .big{
-    font-size: 45px !important;
+    font-size: 40px !important;
   }
   .paragraph{
     margin-top: 1rem;
@@ -574,5 +574,7 @@
   .page{
     padding: 1.5rem;
   }
+  .big{
+    font-size: 50px !important;
+  }
 }
-
