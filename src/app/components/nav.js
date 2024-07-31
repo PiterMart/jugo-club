@@ -31,17 +31,17 @@ export default function Nav() {
         <div className={styles.nav} >
             <Link href="/">
                 <Image
-                    src="/jugoClubLogo.png"
+                    src="/jugoClubLogo2.png"
                     alt="JugoClub"
-                    width={109}
-                    height={77.5}
+                    width={130.8}
+                    height= {63.15}
                     priority
                     style={{filter: 'invert(100%)'}}
                 />
             </Link>
             <div className={styles.nav__list}>
                 <motion.ul
-                    animate={{top: isActive ? "-15px": "-290px"}}
+                    animate={{top: isActive ? "-15px": "-350px"}}
                     transition={{duration: 0.5, ease: [0.33, 1, 0.68, 1]}}
                 >
                     {pages.map((page, index) => {

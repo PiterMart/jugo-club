@@ -9,9 +9,9 @@ export default function Footer(){
 
   return(
     <div className={styles.footer}>
-        <div className={styles.button} style={{marging: '2rem', padding: '2.5rem'}}>
+        {/* <div className={styles.button} style={{marging: '2rem', padding: '2.5rem'}}>
           <p className={styles.form}>DESCUENTO PARA VISITANTES</p>
-        </div>
+        </div> */}
       <div className={styles.center}>
         <Image
           className={styles.logo}

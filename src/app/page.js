@@ -35,12 +35,12 @@ export default function Home() {
               </a>
             </div>
         </div>
-        <div className={styles.division} id="start">
+        <div className={styles.division} >
         </div>
-        <div className={styles.page}>
+        <div className={styles.page} id="start">
         {/* <marquee className={styles.paragraph} style={{ fontSize: '36px',  color: 'black',}} loop="2" scrollamount="15">&#9829; Gracias por visitar JugoClub.com ! &#9829;</marquee> */}
           <div className={styles.page__section}>
-            <p className={styles.title}>
+            <p className={styles.title} style={{marginTop: '5rem'}}>
               SERVIMOS VINOS NATURALES
             </p>
             <div className={styles.center}>
@@ -65,8 +65,8 @@ export default function Home() {
                   className={styles.single__image}
                 />
                 <div>
-                    <p className={styles.description}>
-                      Jugo Club en el Atelier Bonet 
+                    <p className={styles.description} >
+                      Jugo Club en el Atelier Bonet &#8594;
                     </p>
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function Home() {
                         className={styles.double__image}
                       />
                       <p className={styles.description}>
-                        Unite a Jugo Club
+                        Unite a Jugo Club &#8594;
                       </p>
                     </div>
                     <div>
@@ -132,7 +132,7 @@ export default function Home() {
                 </div>
                 <div>
                     <p className={styles.description}>
-                      Visita nuestra vinoteca virtual
+                      Visita nuestra vinoteca virtual &#8594;
                     </p>
                 </div>
               </div>

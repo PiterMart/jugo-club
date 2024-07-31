@@ -1,7 +1,7 @@
 
 /*VARIABLES*/
 :root {
-  --primary:hsl(0, 0%, 100%) ;
+  --primary:rgb(229,229,229) ;
   --secondary: #1c2429;
   --accent: #e3384f  ;
 }
