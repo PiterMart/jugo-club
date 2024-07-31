@@ -40,14 +40,14 @@ export default function About() {
                  calidad.<span style={{color: '#e3384f '}}> Somos una plataforma que comunica, visibiliza y vende online vinos de pequeños productores.</span></p>
                 <p className={styles.paragraph}><span className={styles.paragraph_arrow}>&#8594;</span> Redefiniendo el <span style={{fontStyle: 'italic'}}>“buen beber”</span> academicista y acartonado, creemos en servir vino de forma lúdica  y accesible para nunca más escuchar la temerosa frase: <span style={{fontStyle: 'italic'}}>“Yo no sé nada de vinos”</span>, y dar rienda suelta al deleite desprejuiciado de este jugo ancestral.</p>
               </div>
-              <div style={{borderBottom: '1px solid black', flexDirection: 'row'}} className={styles.page__section4}>
+              <div style={{borderBottom: '1px solid black'}} className={styles.page__section4}>
                 <div style={{ width: 'auto', height: 'auto', pointerEvents: 'none', margin: 'auto'}}>
                   <video autoPlay muted loop playsInline className={styles.single__image} style={{  width: '100%', height: 'auto', overflow: 'hidden', pointerEvents: 'none', margin: 'auto', bottom: '0' }}>
                     <source src="/images/vineyard1.mp4" />
                   </video>
                 </div>
                 <div className={styles.page__section4_paragraphcontainer}>
-                  <p className={styles.subtitle} style={{fontSize: "60px"}}><span style={{color: '#e3384f '}}>Diseñamos</span> experiencias y catas, ofrecemos consultorías para restaurantes  y producimos eventos a medida.</p>
+                  <p className={`${styles["big"]} ${styles["subtitle"]}`}><span style={{color: '#e3384f '}}>Diseñamos</span> experiencias y catas, ofrecemos consultorías para restaurantes  y producimos eventos a medida.</p>
                   <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Nuestra <span style={{color: '#e3384f '}}>misión</span> es brindar a los amantes y curiosos del vino, acceso fácil y rápido a vinos auténticos, elaborados con prácticas artesanales, de partidas limitadas y sin aditivos químicos.</p>
                 </div>
               </div>
