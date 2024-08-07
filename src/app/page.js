@@ -38,10 +38,9 @@ export default function Home() {
         <div className={styles.division} >
         </div>
         <div className={styles.page} id="start">
-        {/* <marquee className={styles.paragraph} style={{ fontSize: '36px',  color: 'black',}} loop="2" scrollamount="15">&#9829; Gracias por visitar JugoClub.com ! &#9829;</marquee> */}
           <div className={styles.page__section}>
-            <p className={styles.title} style={{marginTop: '5rem'}}>
-              SERVIMOS VINOS NATURALES
+            <p className={styles.title}>
+              <span style={{fontFamily: 'Neue'}}></span>Servimos <br></br> <span className={styles.blink}>vinos</span> naturales
             </p>
             <div className={styles.center}>
               <Link href="/about">
@@ -51,9 +50,10 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem'}} loop="0" scrollamount="15" Scrolldelay="175" >Gracias por visitar JugoClub.com     &#9829;  </marquee>
           <div className={styles.page__section}>
             <Link href="/events">
-              <div style={{textAlign: 'left', margin: 'auto',width: '100%', maxWidth: '700px'}}>
+              <div className={styles.image_container}>
                 <Image
                   src="/images/DSCF8911 2.jpg"
                   alt='Placeholder'
@@ -62,24 +62,39 @@ export default function Home() {
                   sizes="100vw"
                   placeholder="empty"
                   loading="lazy"
-                  className={styles.single__image}
+                  className={styles.image}
                 />
                 <div>
-                    <p className={styles.description} >
-                      Jugo Club en el Atelier Bonet &#8594;
+                    <p className={styles.image_description} >
+                      EVENTOS JUGO CLUB <span style={{fontWeight: '500'}}> &#8594; ¿Donde?, ¿Cuando?, ¿Como?</span>
                     </p>
                 </div>
               </div>
             </Link>
           </div>
           <div className={styles.page__section}>
-            <p className={styles.title}>
-              ARTESANAL <span style={{color: ''}}>NATURAL</span> <span style={{color: ''}}>ORGANICO</span>
-            </p>
+            {/* <p className={styles.title}>
+              Artesanal
+              <br></br>
+              <span style={{color: ''}}>natural</span>
+              <br></br>
+              <span style={{color: ''}}>y organico</span>
+            </p> */}
             <Link href="/club">
               <div style={{textAlign: 'left', margin: 'auto',width: '100%', maxWidth: '800px'}}>  
                 <div>
-                  <div className={styles.double__image_container}>
+                  <div className={styles.image_container}>
+                  <Image
+                  src="/images/RIES_2555.jpg"
+                  alt='Placeholder'
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  placeholder="empty"
+                  loading="lazy"
+                  className={styles.image}
+                />
+                  {/* <div className={styles.double__image_container}>
                     <div>
                       <Image
                         src="/images/RIES_2555.jpg"
@@ -91,9 +106,6 @@ export default function Home() {
                         loading="lazy"
                         className={styles.double__image}
                       />
-                      <p className={styles.description}>
-                        Unite a Jugo Club &#8594;
-                      </p>
                     </div>
                     <div>
                       <Image
@@ -107,33 +119,13 @@ export default function Home() {
                         className={styles.double__image}
                       />
                     </div>
+                  </div> */}
+                  <div>
+                      <p className={styles.image_description} >
+                        VINOS NATURALES <span style={{fontWeight: '500'}}> &#8594; ¿Que es el vino natural?</span>
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className={styles.page__section}>
-            <p className={styles.title}>
-              VINOS EN LA PUERTA DE TU HOGAR
-            </p>
-            <Link href="/shop">
-              <div style={{textAlign: 'left', margin: 'auto',width: '100%', maxWidth: '700px'}}>
-                <div style={{display: 'flex', flexDirection: 'row', gap: '2rem', width: '100%',}}>
-                  <Image
-                    src="/images/RIES_3085.jpg"
-                    alt='Placeholder'
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    placeholder="empty"
-                    loading="lazy"
-                    className={styles.single__image}
-                  />
-                </div>
-                <div>
-                    <p className={styles.description}>
-                      Visita nuestra vinoteca virtual &#8594;
-                    </p>
                 </div>
               </div>
             </Link>

@@ -20,13 +20,7 @@ export default function Contact() {
           <div className={styles.page}>
             <div className={styles.page__section}>
               <p className={styles.page__title}>CONTACT</p>
-              <div className={styles.button} style={{marging: '2rem', padding: '2.5rem'}}>
-                <p className={styles.form}>MATEO@JUGOCLUB.WINE</p>
-              </div>
-              <div className={styles.button} style={{marging: '2rem', padding: '2.5rem'}}>
-                <p className={styles.form}>+54 911 2277-9994</p>
-              </div>
-              <div style={{textAlign: 'left', margin: 'auto',width: '100%', maxWidth: '700px'}}>
+              {/* <div style={{textAlign: 'left', margin: 'auto',width: '100%', maxWidth: '700px'}}>
                 <Image
                   src="/images/DSCF8972 2.jpg"
                   alt='Placeholder'
@@ -42,8 +36,9 @@ export default function Contact() {
                       MATEO 
                     </p>
                 </div>
-              </div>
+              </div> */}
             </div>
+            <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem', fontSize: '119px'}} loop="0" scrollamount="15" Scrolldelay="175" >PAGINA EN CONSTRUCCIÓN    &#9829;  </marquee>
           </div>
         </motion.div>
       </main>

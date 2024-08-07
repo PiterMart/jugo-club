@@ -33,7 +33,8 @@ export default function Events() {
           <div className={styles.division}>
           </div>
           <div className={styles.page}>
-            <div className={styles.page__section}>
+          <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem', fontSize: '119px'}} loop="0" scrollamount="15" Scrolldelay="175" >PAGINA EN CONSTRUCCIÓN    &#9829;  </marquee>
+            {/* <div className={styles.page__section}>
               <p className={styles.subtitle}>Parte esencial de la misión por difundir el arte de la producción del vino natural y orgánico</p>
               <div className={styles.double__image_container}>
                 <Image
@@ -154,7 +155,7 @@ export default function Events() {
                 loading="lazy"
                 className={styles.single__image_panoramic}
               />
-            </div>
+            </div> */}
             <div className={styles.center}>
               <Link href="/shop">
                 <p className={styles.button}>

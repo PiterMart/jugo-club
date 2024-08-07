@@ -37,6 +37,7 @@ export default function Club() {
                 </div>
             <p className={styles.subtitle} style={{color: 'white', textAlign: 'center', margin: 'auto'}}>A UN MUNDO DE PLACER</p>
           </div>
+          <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem', fontSize: '119px'}} loop="0" scrollamount="15" Scrolldelay="175" >PAGINA EN CONSTRUCCIÓN    &#9829;  </marquee>
         </div>
         </div>
         </motion.div>
