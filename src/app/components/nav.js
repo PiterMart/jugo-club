@@ -31,7 +31,7 @@ export default function Nav() {
         <div className={styles.nav} >
             <Link href="/">
                 <Image
-                    src="/jugoClubLogo2.png"
+                    src="/jugoClubLogo2SOLID.png"
                     alt="JugoClub"
                     width={130.8}
                     height= {63.15}

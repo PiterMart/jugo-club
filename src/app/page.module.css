@@ -96,6 +96,15 @@
   text-align: left;
   max-width: 50%;
 }
+.glow{
+  color: white;
+  text-align: center;
+  margin: auto;
+  text-shadow: black 5px 0px 10px;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 72px;
+}
 .big{
   font-size: 48px;
   line-height: 48px;
@@ -342,7 +351,9 @@
   background: #fafafa;
   text-align: center;
   font-family: Vigo;
-  border-top: 1px solid black
+  padding-top: 0px;
+  gap: 2.5rem;
+  /* border-top: 1px solid black */
 }
 .footer__section_container{
   margin-top: 0rem;
@@ -366,7 +377,7 @@
   margin-top: 2rem;
   margin: auto;
   width: 100%;
-  border-top: 1px solid var(--secondary);
+  /* border-top: 1px solid var(--secondary); */
 }
 .footer__section a:hover{
   animation-duration: 5ms;
@@ -444,6 +455,15 @@
   margin-right: auto;
 
 }
+.page__section_product{
+  border: 2px solid black; 
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
 .page__section_container2{
   display: flex;
   flex-direction: row;
@@ -451,6 +471,12 @@
   display: flex;
   gap: 2.5rem;
   padding-bottom: 2.5rem;
+}
+.page__section_container_box{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .page__section_paragraphcontainer2{
   display: flex;
@@ -480,14 +506,6 @@
   margin-left: auto;
 }
 
-.page__title{
-  font-family: Vigo;
-  font-weight: 500;
-  font-size: 70px;
-  color: var(--accent);
-  margin-top: 5rem;
-}
-
 /* Mobile */
 @media (max-width: 600px) {
 
@@ -501,6 +519,15 @@
     font-size: 28px;
     max-width: 100%;
     line-height: 28px;
+  }
+  .glow{
+    color: white;
+    text-align: center;
+    margin: auto;
+    text-shadow: black 5px 0px 10px;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 48px;
   }
   .paragraph{
     font-size: 16px;
@@ -573,6 +600,19 @@
     gap: 0.75rem;
     padding-bottom: 1.5rem;
   }
+  .page__section_container{
+    flex-direction: column;
+  }
+  .page__section_container_box{
+    width: 70%;
+    margin: auto;
+    gap: 0.25rem;
+    margin-top: 1.5rem;
+  }
+  .page__section_product{
+    border: 1px solid black;
+    padding: 1.5rem;
+  }
   .page__section_container2{
     flex-direction: column;
     max-width: 100%;
@@ -584,12 +624,6 @@
     padding: 0px;
     padding-left: 0px;
     padding-right: 0px;
-  }
-  .page__title{
-    font-family: Vigo;
-    font-weight: normal;
-    font-size: 40px;
-    margin-top: 0px;
   }
 
   .double__image_container{

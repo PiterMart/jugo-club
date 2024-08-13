@@ -64,9 +64,7 @@ export default function About() {
                 </div>
               </div>
               <div style={{borderBottom: '1px solid black', paddingBottom: '1.5rem', display: 'flex', flexDirection: 'column'}} className={styles.page__section_paragraphcontainer}>
-                <div>
-                </div>
-                <div className={styles.double__image_container}>
+                {/* <div className={styles.double__image_container}>
                 <div style={{width: '100%'}}>
                   <Image
                     src="/images/4ECF7D09-5177-441E-BE33-7958F0311712.JPG"
@@ -85,10 +83,12 @@ export default function About() {
                     <source src="/images/vineyard2.mp4" />
                   </video>
                 </div>
-              </div>
+              </div> */}
               <p className={styles.subtitle}>Somos <span style={{color: '#e3384f '}}>Cavistas de oficio</span>, especializados en la curaduría y manejo de una selección atípica, tendiendo puentes con pequeños productores con una impronta irreverente.</p>
-              <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Nuestra labor incluye <span style={{color: '#e3384f '}}>seleccionar y conocer en profundidad cada etiqueta</span>, su origen, proceso de elaboración dialogando con sus creadores para transmitir la particularidad de sus vinos. </p>
-              <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span>Entender sus características únicas nos permite<span style={{color: '#e3384f '}}> asesorar y guiar a nuestros bebedores de forma personalizada.</span></p>
+              <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Nuestra labor incluye <span style={{color: '#e3384f '}}>seleccionar y conocer en profundidad cada etiqueta</span>, su origen, proceso de elaboración dialogando con sus creadores para transmitir la particularidad de sus vinos.
+              <br></br>
+              <span className={styles.paragraph_arrow}>&#8594;</span>Entender sus características únicas nos permite<span style={{color: '#e3384f '}}> asesorar y guiar a nuestros bebedores de forma personalizada.</span>
+               </p>
               </div>
             </div>
             <div className={styles.page__section}>

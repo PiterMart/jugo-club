@@ -26,14 +26,39 @@ export default function Events() {
               height={0}
               priority
               unoptimized
-              style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '-5rem', pointerEvents: 'none' }}
+              style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0rem', pointerEvents: 'none' }}
             />
           </div>
           <div style={{height: '80vH'}}></div>
           <div className={styles.division}>
           </div>
           <div className={styles.page}>
-          <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem', fontSize: '119px'}} loop="0" scrollamount="15" Scrolldelay="175" >PAGINA EN CONSTRUCCIÓN    &#9829;  </marquee>
+          <div className={styles.page__section}>
+              <p className={styles.title}>Events</p>
+              <div style={{borderBottom: '1px solid black', borderTopLeftRadius: "20px 50px"}} className={styles.page__section_paragraphcontainer}>
+                <p className={styles.subtitle}>Es esencial para poder difundir el arte de la producción del vino natural y orgánico, <span style={{color: '#e3384f '}}>centrar nuestra labor en la experiencia de compartir esta bebida espirituosa en un ambiente íntimo o social.</span></p>
+                <p className={styles.paragraph}><span className={styles.paragraph_arrow}>&#8594;</span> Desde Jugo Club elaboramos una serie de situaciones y ambientes que muchas veces se adaptan a los formatos de eventos artísticos, gatherings, o cócteles especiales para las agendas de quienes busquen crear encuentros diseñados hasta el último detalle.  </p>
+              </div>
+              <div style={{borderBottom: '1px solid black'}} className={styles.page__section_container2}>
+                <div style={{pointerEvents: 'none'}} className={styles.image_container}>
+                <Image
+                  src="/images/DSCF8911 2.jpg"
+                  alt='Placeholder'
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  placeholder="empty"
+                  loading="lazy"
+                  className={styles.image}
+                />
+                </div>
+                <div className={styles.page__section_paragraphcontainer2}>
+                  <p className={`${styles["subtitle"]}`} style={{maxWidth: '100%'}}>Entre nuestros clientes se encuentran ArteBA, Soho House, galerías de arte y eventos privados hosteados tanto en el emblemático <span style={{color: '#e3384f '}}>Atelier Bonet</span>, headquarter de Jugo Club, o en venues específicos a cada evento. </p>
+                  <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Este servicio <span style={{fontStyle: 'italic', fontWeight: 'bolder'}}>tailor-made</span> se adapta a las necesidades de cada cliente pudiendo ir desde una asesoría hasta la producción integral del evento.</p>
+                </div>
+              </div>
+            </div>
+          {/* <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem', fontSize: '119px'}} loop="0" scrollamount="15" Scrolldelay="175" >PAGINA EN CONSTRUCCIÓN    &#9829;  </marquee> */}
             {/* <div className={styles.page__section}>
               <p className={styles.subtitle}>Parte esencial de la misión por difundir el arte de la producción del vino natural y orgánico</p>
               <div className={styles.double__image_container}>
@@ -156,13 +181,13 @@ export default function Events() {
                 className={styles.single__image_panoramic}
               />
             </div> */}
-            <div className={styles.center}>
-              <Link href="/shop">
+            {/* <div className={styles.center}>
+              <Link href="/contact">
                 <p className={styles.button}>
-                   VINOS NATURALES EN LA PUERTA DE TU HOGAR
+                   CONTACTANOS
                 </p>
               </Link>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       </main>

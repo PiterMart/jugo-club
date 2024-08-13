@@ -12,10 +12,12 @@ export default function Footer(){
         {/* <div className={styles.button} style={{marging: '2rem', padding: '2.5rem'}}>
           <p className={styles.form}>DESCUENTO PARA VISITANTES</p>
         </div> */}
+      <Link href="/">
       <div className={styles.center}>
+      
         <Image
           className={styles.logo}
-          src="/jugoClubLogo2.png"
+          src="/jugoClubLogo2SOLID.png"
           alt='Jugo Club'
           width={0}
           height={0}
@@ -24,12 +26,16 @@ export default function Footer(){
           loading="lazy"
           style={{marginTop: '4rem'}}
         />
+        
       </div>
+      </Link>
       <div className={styles.footer__section_container}>
-      <p className={styles.button}>CONTACT</p>
-          <p className={styles.paragraph} style={{fontWeight: '500', textAlign: 'center'}}>
+      <Link href="/contact">
+        <p className={styles.button}>CONTACTO</p>
+      </Link>
+          {/* <p className={styles.paragraph} style={{fontWeight: '500', textAlign: 'center'}}>
             En Jugo Club, nos enorgullecemos de ofrecer una cuidadosa selección de vinos argentinos que representan la esencia más auténtica y honesta de nuestra tierra. Somos un club comprometido con descubrir y compartir el mensaje único que cada productor transmite a través de sus botellas.
-          </p>
+          </p> */}
         </div>
       <div className={styles.footer__section}>
         <div className={styles.footer__section_container}>

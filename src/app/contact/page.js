@@ -19,7 +19,7 @@ export default function Contact() {
         }}>
           <div className={styles.page}>
             <div className={styles.page__section}>
-              <p className={styles.page__title}>CONTACT</p>
+              <p className={styles.page__title}>CONTACTO</p>
               {/* <div style={{textAlign: 'left', margin: 'auto',width: '100%', maxWidth: '700px'}}>
                 <Image
                   src="/images/DSCF8972 2.jpg"
