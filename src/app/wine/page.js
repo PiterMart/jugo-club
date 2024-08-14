@@ -56,7 +56,7 @@ export default function About() {
               </div>
             </div>
             <div style={{borderBottom: '1px solid black', paddingBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '5rem' }} className={styles.page__section_paragraphcontainer}>
-              <div className={`${styles["page__section2"]} ${styles["page__section3"]}`}>
+              <div className={`${styles["page__section2"]} ${styles["page__section3"]}`} style={{padding: "0px"}}>
                   <Image
                     src="/images/IMG_5695_1.jpg"
                     alt='Placeholder'

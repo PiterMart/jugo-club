@@ -51,7 +51,7 @@ export default function Home() {
             </div>
           </div>
           <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem'}} loop="0" scrollamount="15" Scrolldelay="175" >Gracias por visitar JugoClub.com     &#9829;  </marquee>
-          <div className={styles.page__section}>
+          <div className={styles.page__section2}>
             <Link href="/events">
               <div className={styles.image_container}>
                 <Image
@@ -71,15 +71,6 @@ export default function Home() {
                 </div>
               </div>
             </Link>
-          </div>
-          <div className={styles.page__section}>
-            {/* <p className={styles.title}>
-              Artesanal
-              <br></br>
-              <span style={{color: ''}}>natural</span>
-              <br></br>
-              <span style={{color: ''}}>y organico</span>
-            </p> */}
             <Link href="/club">
               <div style={{textAlign: 'left', margin: 'auto',width: '100%', maxWidth: '800px'}}>  
                 <div>
@@ -94,32 +85,6 @@ export default function Home() {
                   loading="lazy"
                   className={styles.image}
                 />
-                  {/* <div className={styles.double__image_container}>
-                    <div>
-                      <Image
-                        src="/images/RIES_2555.jpg"
-                        alt='Placeholder'
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                        placeholder="empty"
-                        loading="lazy"
-                        className={styles.double__image}
-                      />
-                    </div>
-                    <div>
-                      <Image
-                        src="/images/RIES_2702.jpg"
-                        alt='Placeholder'
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                        placeholder="empty"
-                        loading="lazy"
-                        className={styles.double__image}
-                      />
-                    </div>
-                  </div> */}
                   <div>
                       <p className={styles.image_description} >
                         VINOS NATURALES <span style={{fontWeight: '500'}}> &#8594; ¿Que es el vino natural?</span>
@@ -129,6 +94,8 @@ export default function Home() {
                 </div>
               </div>
             </Link>
+          </div>
+          <div className={styles.page__section}>
           </div>
         </div>
       </motion.div>
