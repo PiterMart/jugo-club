@@ -37,20 +37,53 @@ export default function Home() {
         </div>
         <div className={styles.division} >
         </div>
-        <div className={styles.page} id="start">
-          <div className={styles.page__section}>
-            <p className={styles.title}>
-              <span style={{fontFamily: 'Neue'}}></span>Servimos <br></br> <span className={styles.blink}>vinos</span> naturales
-            </p>
-            <div className={styles.center}>
+        <div className={styles.page} >
+          <div className={styles.page__home} id="start">
+              <Image
+                src="/Botellas-Crops.gif"
+                alt='Placeholder'
+                width={0}
+                height={0}
+                sizes="100vw"
+                placeholder="empty"
+                loading="lazy"
+                className={styles.image_home}
+                // style={{maxWidth: '900px', width: '50rem', margin: '0rem'}}
+              />
+              <div className={styles.page__home_text}>
+                {/* <p className={styles.title} style={{fontFamily: 'Neue', background:"pink", padding: '1rem'}}>
+                  <span></span>Servimos <br></br> <span className={styles.blink}>vinos</span> naturales
+                </p> */}
+                <p className={styles.title_home}>
+                  Servimos
+                </p>
+                <p className={styles.title_home}>
+                  <span className={styles.blink}  style={{paddingLeft: '1rem'}}> Vinos</span> 
+                </p>
+                <p className={styles.title_home} style={{paddingLeft: '2rem'}}>
+                    Naturales
+                </p>
+              </div>
+            </div>
+            <div className={styles.page__home2} style={{}} id="start">
+            <div className={styles.center2}>
               <Link href="/about">
                 <p className={styles.button}>
-                   CONOCE JUGO CLUB
+                   CONOCÉ JUGO CLUB
                 </p>
               </Link>
-            </div>
           </div>
-          <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem'}} loop="0" scrollamount="15" Scrolldelay="175" >Gracias por visitar JugoClub.com     &#9829;  </marquee>
+          <Image
+                src="/butterflyCup.png"
+                alt='Placeholder'
+                width={0}
+                height={0}
+                sizes="100vw"
+                placeholder="empty"
+                loading="lazy"
+                className={styles.butterfly}
+              />
+          </div>
           <div className={styles.page__section2}>
             <Link href="/events">
               <div className={styles.image_container}>

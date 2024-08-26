@@ -9,6 +9,7 @@ export default function Footer(){
 
   return(
     <div className={styles.footer}>
+      <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem'}} loop="0" scrollamount="15" Scrolldelay="175" >Gracias por visitar JugoClub.com     &#9829;  </marquee>
         {/* <div className={styles.button} style={{marging: '2rem', padding: '2.5rem'}}>
           <p className={styles.form}>DESCUENTO PARA VISITANTES</p>
         </div> */}

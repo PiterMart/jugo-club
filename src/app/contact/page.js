@@ -38,7 +38,6 @@ export default function Contact() {
                 </div>
               </div> */}
             </div>
-            <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem', fontSize: '119px'}} loop="0" scrollamount="15" Scrolldelay="175" >PAGINA EN CONSTRUCCIÓN    &#9829;  </marquee>
           </div>
         </motion.div>
       </main>

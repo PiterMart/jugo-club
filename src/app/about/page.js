@@ -100,7 +100,6 @@ export default function About() {
               </Link>
               </div>
             </div>
-            <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem'}} loop="0" scrollamount="15" Scrolldelay="175" >Gracias por visitar JugoClub.com     &#9829;  </marquee>
           </div>
         </motion.div>
       </main>

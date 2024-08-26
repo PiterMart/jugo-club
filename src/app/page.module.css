@@ -86,6 +86,16 @@
   text-align: left;
   overflow-wrap: anywhere;
 }
+.title_home{
+  font-family: NeueDisp;
+  font-weight: 500;
+  font-size: 6rem;
+  line-height: 5rem;
+  color: var(--accent);
+  text-align: left;
+  overflow-wrap: anywhere;
+
+}
 .subtitle{
   font-family: "Neue";
   font-weight: 500;
@@ -198,6 +208,15 @@
   text-align: center;
   gap: 2rem;
 }
+.center2{
+  display: flex;
+  justify-content: center;
+  text-justify: center;
+  text-align: center;
+  gap: 2rem;
+  align-self: flex-end;
+  padding-bottom: 4rem;
+}
 .logo{
   width: 100vh; 
   height: 100%;
@@ -212,8 +231,24 @@
 .image{
   height: auto;
   width: 600px;
-  max-width: 600px;
+  max-width: 550px;
   margin: auto;
+}
+.image_home{
+  height: auto;
+  margin: auto;
+  max-width: 900px;
+  width: 50rem;
+  margin: 0rem;
+}
+.butterfly{
+  height: auto;
+  width: 600px;
+  max-width: 550px;
+  margin: auto;
+  max-width: 200px;
+  width: 50rem;
+  margin: 0rem;
 }
 .image_description{
   font-family: Neue;
@@ -346,19 +381,16 @@
   flex-direction: column;
   position: relative;
   bottom: 0;
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
   justify-content: space-evenly;
   font-size: 1rem;
   width: 100%;
-  padding: 2rem;
   z-index: 10;
   margin: auto;
   background: #fafafa;
   text-align: center;
   font-family: Vigo;
-  padding-top: 0px;
   gap: 2.5rem;
-  /* border-top: 1px solid black */
 }
 .footer__section_container{
   margin-top: 0rem;
@@ -445,6 +477,7 @@
   gap: 2rem;
   text-align: left;
   width: 100%;
+  justify-content: space-around;
 }
 .page__section_container{
   border-bottom: 1px solid black;
@@ -510,6 +543,36 @@
   margin-right: auto;
   margin-left: auto;
 }
+.page__home{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  max-width: 1200px;
+  border-bottom: 2px solid black
+}
+.page__home2{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  max-width: 1200px;
+  border-bottom: 2px solid black;
+  justify-content: flex-end;
+  margin-top: -40rem;
+  border-bottom: none;
+}
+.page__home_text{
+  position: absolute;
+  top: 15rem;
+  left: 20rem;
+}
 
 /* Mobile */
 @media (max-width: 600px) {
@@ -525,6 +588,30 @@
     max-width: 100%;
     line-height: 28px;
   }
+  .title_home{
+    font-size: 3.5rem;
+    line-height: 2.75rem;
+    border-bottom: none;
+  }
+  .page__home_text{
+    position: absolute;
+    top: 10rem;
+    left: 8rem;
+  }
+  .page__home{
+    border-bottom: none;
+    padding-top: 5rem;
+
+  }
+  .page__home2{
+    justify-content: flex-end;
+    margin-top: -16rem;
+    width: 90%;
+    border-bottom: 2px solid black;
+    padding-bottom: 2.5rem;
+
+  }
+  
   .glow{
     color: white;
     text-align: center;
@@ -554,6 +641,9 @@
     padding: .75rem;
     border: 2px solid white;
   }
+  .center2{
+    padding-bottom: 2rem;
+  }
   .form{
     font-family: Vigo;
     font-size: 26px;
@@ -564,6 +654,14 @@
   }
   .image{
     max-width: 100%;
+  }
+  .image_home{
+    max-width: 500px;
+    margin-right: -5rem;
+
+  }
+  .butterfly{
+    max-width: 127px;
   }
   /*PAGE*/
   .page{
@@ -675,7 +773,6 @@
     /*FOOTER*/
     .footer{
       z-index: 1;
-      padding: 0.5rem;
       padding-top: 0px;
       margin-top: 0px;
     }
