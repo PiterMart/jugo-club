@@ -538,7 +538,7 @@
 }
 .page__section_product{
   padding: 2.5rem;
-  border-radius: 1.5rem;
+  /* border-radius: 1.5rem; */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -800,6 +800,7 @@
   .page__section_product{
     padding: 1.5rem;
     text-align: center;
+    border-bottom: 1px solid black;
   }
   .page__section_container2{
     flex-direction: column;
