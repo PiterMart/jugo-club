@@ -38,8 +38,18 @@ export default function About() {
           </div>
           <div className={styles.page} id="start">
             <div className={styles.page__section}>
+              <Image
+                  src="/demon.png"
+                  alt="Background"
+                  width={0}
+                  height={0}
+                  priority
+                  unoptimized
+                  className={`${styles["devil"]} ${styles[""]}`}
+                />
               <p className={styles.title}>About us</p>
               <div style={{borderBottom: '1px solid black', borderTopLeftRadius: "20px 50px"}} className={styles.page__section_paragraphcontainer}>
+                
                 {/* <div style={{display: 'flex', flexDirection: 'row', gap: '1.5rem'}}>
                   <p className={styles.subtitle}>Jugo Club  es un proyecto especializado en Vinos Naturales de baja intervención y de alta
                     calidad.<span style={{color: '#e3384f '}}> Somos una plataforma que comunica, visibiliza y vende online vinos de pequeños
@@ -59,7 +69,7 @@ export default function About() {
                   </video>
                 </div>
                 <div className={styles.page__section_paragraphcontainer2}>
-                  <p className={`${styles["subtitle"]}`} style={{maxWidth: '100%'}}><span style={{color: '#e3384f', fontWeight: '1000', fontSize: '4rem', lineHeight: '4rem'}}>Diseñamos</span> experiencias y catas, ofrecemos consultorías para restaurantes  y producimos eventos a medida.</p>
+                  <p className={`${styles["subtitle"]}`} style={{maxWidth: '100%'}}><span style={{color: '#e3384f', fontWeight: '1000', fontSize: '4rem', lineHeight: '4rem', fontFamily: 'Neue'}}>Diseñamos</span> experiencias y catas, ofrecemos consultorías para restaurantes  y producimos eventos a medida.</p>
                   <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Nuestra <span style={{ fontWeight: '500'}}>misión</span> es brindar a los amantes y curiosos del vino, acceso fácil y rápido a vinos auténticos, elaborados con prácticas artesanales, de partidas limitadas y sin aditivos químicos.</p>
                 </div>
               </div>
@@ -84,7 +94,7 @@ export default function About() {
                   </video>
                 </div>
               </div> */}
-              <p className={styles.subtitle}><span style={{fontWeight: '1000', fontSize: '5rem', lineHeight: '4rem'}}>Somos <span style={{color: '#e3384f '}}>Cavistas de oficio</span>,</span> especializados en la curaduría y manejo de una <span style={{fontStyle: 'italic'}}>selección atípica</span>, tendiendo puentes con pequeños productores con una impronta irreverente.</p>
+              <p className={styles.subtitle}><span style={{fontWeight: '1000', fontSize: '5rem', lineHeight: '4rem', fontFamily: 'Neue' }}>Somos <span style={{color: '#e3384f '}}>Cavistas de oficio</span>,</span> especializados en la curaduría y manejo de una <span style={{fontStyle: 'italic'}}>selección atípica</span>, tendiendo puentes con pequeños productores con una impronta irreverente.</p>
               <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Nuestra labor incluye <span style={{ fontWeight: '500'}}>seleccionar y conocer en profundidad cada etiqueta</span>, su origen, proceso de elaboración dialogando con sus creadores para transmitir la particularidad de sus vinos.
               <br></br>
               Entender sus características únicas nos permite<span style={{ fontWeight: '500'}}> asesorar y guiar a nuestros bebedores de forma personalizada.</span>

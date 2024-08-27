@@ -55,7 +55,7 @@ export default function Club() {
           </a>
           <div className={styles.division}>
           </div>
-          <div className={styles.page}>
+          <div className={styles.page} id="start">
             <div className={styles.page__section}>
               <p className={styles.title}>COMING <span className={styles.blink}>SOON!</span></p>
               <div className={styles.page__section_container2}>
@@ -96,8 +96,8 @@ export default function Club() {
           <div className={styles.page__section} id="planes">
               <div className={styles.page__section_container} style={{border: 'none'}}>
                 <div  className={styles.page__section_product}>
-                  <p className={styles.title}>PLAN 1</p>
-                  <p className={styles.paragraph}>Elegí de nuestros estilos de plan, los estilos que más te gustan! </p>
+                  <p className={styles.title_home} style={{fontSize: "4rem", lineHeight: "3rem", textAlign: 'center'}}>PLAN #1</p>
+                  <p className={styles.paragraph} style={{textAlign: 'center'}}>Elegí de nuestros estilos de plan, los estilos que más te gustan! </p>
                   <div className={styles.center}>
                     <Link href="">
                       <p className={styles.button}>
@@ -105,10 +105,13 @@ export default function Club() {
                       </p>
                     </Link>
                   </div>
+                  <p>desde
+                    <br></br>
+                  $25.000.-</p>
                 </div>
                 <div className={styles.page__section_product}>
-                  <p className={styles.title}>PLAN 2</p>
-                  <p className={styles.paragraph}>Elegí de nuestros estilos de plan, los estilos que más te gustan! </p>
+                  <p className={styles.title_home} style={{fontSize: "4rem", lineHeight: "3rem", textAlign: 'center'}}>PLAN #2</p>
+                  <p className={styles.paragraph} style={{textAlign: 'center'}}>Elegí de nuestros estilos de plan, los estilos que más te gustan! </p>
                   <div className={styles.center}>
                     <Link href="">
                       <p className={styles.button}>
@@ -116,10 +119,13 @@ export default function Club() {
                       </p>
                     </Link>
                   </div>
+                  <p>desde
+                    <br></br>
+                  $25.000.-</p>
                 </div>
                 <div className={styles.page__section_product}>
-                  <p className={styles.title}>PLAN 3</p>
-                  <p className={styles.paragraph}>Elegí de nuestros estilos de plan, los estilos que más te gustan! </p>
+                  <p className={styles.title_home} style={{fontSize: "4rem", lineHeight: "3rem", textAlign: 'center'}}>PLAN #3</p>
+                  <p className={styles.paragraph} style={{textAlign: 'center'}}>Elegí de nuestros estilos de plan, los estilos que más te gustan! </p>
                   <div className={styles.center}>
                     <Link href="">
                       <p className={styles.button}>
@@ -127,6 +133,9 @@ export default function Club() {
                       </p>
                     </Link>
                   </div>
+                  <p>desde
+                    <br></br>
+                  $25.000.-</p>
                 </div>
               </div>
             </div>

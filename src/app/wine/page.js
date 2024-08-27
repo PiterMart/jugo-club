@@ -20,7 +20,16 @@ export default function About() {
         }}>
           <div className={styles.page}>
             <div className={styles.page__section} >
-              <p className={styles.title}>¿Que es el <span className={styles.blink}> vino</span> natural?</p>
+            <Image
+                  src="/butterflyCup.png"
+                  alt="Background"
+                  width={0}
+                  height={0}
+                  priority
+                  unoptimized
+                  className={`${styles["butterfly2"]} ${styles["floating"]}`}
+                />
+              <p className={styles.title}>¿Qué es el <span className={styles.blink}> vino</span> natural?</p>
               {/* <div style={{gap: '0rem'}}>
                 <div style={{background: "#e3384f ", padding: "1.5rem"}}>
                   <p className={styles.subtitle} style={{color: 'black', marginTop: '0rem', }}>VINOS CON CARACTER</p>

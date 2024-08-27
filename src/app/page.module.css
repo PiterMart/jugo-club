@@ -84,6 +84,7 @@
   line-height: 89px;
   color: var(--accent);
   text-align: left;
+  z-index: 5;
   overflow-wrap: anywhere;
 }
 .title_home{
@@ -97,7 +98,7 @@
 
 }
 .subtitle{
-  font-family: "Neue";
+  font-family: "NeueDisp";
   font-weight: 500;
   font-style: normal;
   font-size: 42px;
@@ -105,6 +106,7 @@
   color: var(--secondary);
   text-align: left;
   max-width: 50%;
+  z-index: 5;
 }
 .glow{
   color: white;
@@ -226,6 +228,47 @@
   height: 10rem;
   background: rgb(209,176,100);
   background: linear-gradient(180deg, rgba(209, 176, 100, 0) 0%, #fafafafa 100%)
+}
+/* JUGO */
+.jugo{
+  font-family: 'Neue';
+  font-weight: 400;
+  display: flex;
+  font-size: 10rem;
+
+}
+.jugo_subtitle{
+  font-family: 'Neue';
+  font-size: 2rem;
+  text-align: left;
+  margin-right: 0rem;
+  margin-left: 13rem;
+}
+.jugo_image{
+  height: auto;
+    width: 600px;
+    max-width: 8rem;
+    margin: auto;
+}
+/*STICKERS*/
+.devil{
+  color: transparent;
+  width: 26rem;
+  height: auto;
+  position: absolute;
+  z-index: 5;
+  right: 23rem;
+  top: 69rem;
+  pointer-events: none;
+}
+.butterfly2{
+  width: 17rem;
+    height: auto;
+    position: absolute;
+    z-index: 5;
+    right: 36rem;
+    top: 18rem;
+    pointer-events: none;
 }
 /*IMAGES*/
 .image{
@@ -494,13 +537,12 @@
 
 }
 .page__section_product{
-  border: 2px solid black; 
   padding: 2.5rem;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  text-align: center;
+  text-align: center !important;
 }
 .page__section_container2{
   display: flex;
@@ -579,14 +621,15 @@
 
   .title{
     font-family: Vigo;
-    font-size: 72px;
-    line-height: 48px;
+    font-size: 3rem;
+    line-height: 3rem;
     overflow-wrap: anywhere;
   }
   .subtitle{
     font-size: 28px;
     max-width: 100%;
     line-height: 28px;
+    max-width: 80%;
   }
   .title_home{
     font-size: 3.5rem;
@@ -611,7 +654,46 @@
     padding-bottom: 2.5rem;
 
   }
-  
+  /* JUGO */
+.jugo{
+  font-family: 'Neue';
+  font-weight: 400;
+  display: flex;
+  font-size: 6.5rem;
+
+}
+.jugo_subtitle{
+  font-family: 'Neue';
+  font-size: 20px;
+  text-align: left;
+  margin-right: 0rem;
+  margin-left: 137px;
+}
+.jugo_image{
+  height: auto;
+  width: 80px;
+  max-width: 5rem;
+  margin: auto;
+}
+/*STICKERS*/
+.devil{
+  width: 13rem;
+  height: auto;
+  position: absolute;
+  z-index: 5;
+  right: 1rem;
+  top: 59rem;
+  pointer-events: none;
+}
+.butterfly2{
+  width: 8rem;
+  height: auto;
+  position: absolute;
+  z-index: 0;
+  right: 0rem;
+  top: 21rem;
+  pointer-events: none;
+}
   .glow{
     color: white;
     text-align: center;
@@ -716,8 +798,8 @@
     margin-top: 1.5rem;
   }
   .page__section_product{
-    border: 1px solid black;
     padding: 1.5rem;
+    text-align: center;
   }
   .page__section_container2{
     flex-direction: column;
@@ -797,6 +879,22 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 601px) and (max-width: 1200px) {
+  .subtitle{
+    max-width: 80%;
+  }
+  .butterfly2{
+    width: 17rem;
+    height: auto;
+    position: absolute;
+    z-index: 5;
+    right: -1rem;
+    top: 23rem;
+    pointer-events: none;
+  }
+  .devil{
+    right: 0rem;
+    top: 61rem;
+  }
   .page__section{
     padding-left: 2.5rem;
     padding-right: 2.5rem;

@@ -34,6 +34,16 @@ export default function Events() {
           </div>
           <div className={styles.page}>
           <div className={styles.page__section}>
+          {/* <Image
+                  src="/houseOfWines.png"
+                  alt="Background"
+                  width={0}
+                  height={0}
+                  priority
+                  unoptimized
+                  className={`${styles["devil"]} ${styles["g"]}`}
+                  style={{maxWidth: '23rem',width: '23rem', transform: "rotate(45deg)"}}
+                /> */}
               <p className={styles.title}>Events</p>
               <div style={{borderBottom: '1px solid black', borderTopLeftRadius: "20px 50px"}} className={styles.page__section_paragraphcontainer}>
                 <p className={styles.subtitle}>Es esencial para poder difundir el arte de la producción del vino natural y orgánico, <span style={{color: '#e3384f '}}>centrar nuestra labor en la experiencia de compartir esta bebida espirituosa en un ambiente íntimo o social.</span></p>
