@@ -9,7 +9,7 @@ export default function Footer(){
 
   return(
     <div className={styles.footer}>
-      <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem'}} loop="0" scrollamount="15" Scrolldelay="175" >Gracias por visitar JugoClub.com     &#9829;  </marquee>
+      {/* <marquee className={styles.paragraph} style={{  color: 'white', background: '#e3384f', padding: '0.5rem', marginBottom: '5rem'}} loop="0" scrollamount="15" Scrolldelay="175" >Gracias por visitar JugoClub.com     &#9829;  </marquee> */}
         {/* <div className={styles.button} style={{marging: '2rem', padding: '2.5rem'}}>
           <p className={styles.form}>DESCUENTO PARA VISITANTES</p>
         </div> */}
@@ -40,6 +40,10 @@ export default function Footer(){
         </div>
       <div className={styles.footer__section}>
         <div className={styles.footer__section_container}>
+                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Instagram</p>
+                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Facebook</p>
+                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Tienda</p>
+
         </div>
       </div>
 

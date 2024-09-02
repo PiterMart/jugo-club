@@ -18,7 +18,7 @@ export default function Nav() {
         { name: 'ABOUT', path: '/about'},
         { name: 'CLUB', path: '/club'},
         { name: 'EVENTS', path: '/events'},
-        { name: 'SHOP', path: '/shop'},
+        { name: 'SHOP', path: 'https://jugoclub.wine/'},
         { name: 'CONTACT', path: '/contact'},
     ];
 

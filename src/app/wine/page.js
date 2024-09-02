@@ -1,4 +1,5 @@
 "use client"
+import Footer from "../components/footer";
 import Image from "next/image";
 import styles from "../page.module.css";
 import Link from "next/link";
@@ -45,7 +46,7 @@ export default function About() {
                 </div>
               </div> */}
               <div style={{borderBottom: '1px solid black', paddingBottom: '1.5rem', borderTopLeftRadius: "20px 50px"}} className={styles.page__section_paragraphcontainer}>
-                <p className={styles.subtitle}>Interpretar la necesidad de una disrupción de los paradigmas para habilitar un encuentro más certero y <span style={{color: '#e3384f '}}>situado en un presente contínuo sin ánimos de especulación en el futuro.</span> </p>
+                <p className={styles.subtitle} >Interpretar la necesidad de una disrupción de los paradigmas para habilitar un encuentro más certero y <span style={{color: '#e3384f '}}>situado en un presente contínuo sin ánimos de especulación en el futuro.</span> </p>
                 <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Entender estos mandamientos a la hora de dirigir la mirada hacia los procesos de producción de una de las bebidas más ancestrales -<span style={{fontStyle: 'italic', fontWeight: 'bolder'}}> que nos ha acompañado como especie desde los albores de nuestros tiempos</span> - implica no sólo la construcción de una idea sobre lo hedonista y el deseo en general, sino comprender que la alquimia de un elixir tal tiene tanto de íntimo como de único a cada proceso. </p>
               </div>
             <div style={{borderBottom: '1px solid black'}} className={styles.page__section_container2}>
@@ -118,6 +119,7 @@ export default function About() {
             </div>
           </div>
         </motion.div>
+        <Footer/>
       </main>
     );
   }

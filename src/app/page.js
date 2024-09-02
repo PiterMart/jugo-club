@@ -1,4 +1,5 @@
 'use client'
+import Footer from "./components/footer";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
@@ -48,12 +49,8 @@ export default function Home() {
                 placeholder="empty"
                 loading="lazy"
                 className={styles.image_home}
-                // style={{maxWidth: '900px', width: '50rem', margin: '0rem'}}
               />
               <div className={styles.page__home_text}>
-                {/* <p className={styles.title} style={{fontFamily: 'Neue', background:"pink", padding: '1rem'}}>
-                  <span></span>Servimos <br></br> <span className={styles.blink}>vinos</span> naturales
-                </p> */}
                 <p className={styles.title_home}>
                   Servimos
                 </p>
@@ -85,6 +82,41 @@ export default function Home() {
               />
           </div>
           <div className={styles.page__section2}>
+          <div>
+              <p className={styles.image_description}>
+                JUGOS EN TU HOGAR <span style={{fontWeight: '500'}}> &#8594; Unite a nuestro Club</span>
+              </p>
+            </div>
+            <div className={styles.page__section_slide} >
+            <Link href="/club">
+              <div className={styles.image_container}>
+                <Image
+                  src="/DIONISIO.jpg"
+                  alt='Placeholder'
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  placeholder="empty"
+                  loading="lazy"
+                  className={styles.image}
+                />
+              </div>
+            </Link>
+            <div className={styles.page__section_slide_info}>
+            <p className={styles.paragraph}>Nuestro club funciona a través de una suscripción mensual de vinos nuevos cada mes.</p>
+            <Link href="/club">
+              <p>UNIRSE</p>
+              </Link>
+            </div>
+            </div>
+          </div>
+          <div className={styles.page__section2}>
+          <div>
+              <p className={styles.image_description}>
+                EVENTOS JUGO CLUB <span style={{fontWeight: '500'}}> &#8594; ¿Donde?, ¿Cuando?, ¿Como?</span>
+              </p>
+            </div>
+            <div className={styles.page__section_slide} >
             <Link href="/events">
               <div className={styles.image_container}>
                 <Image
@@ -97,41 +129,20 @@ export default function Home() {
                   loading="lazy"
                   className={styles.image}
                 />
-                <div>
-                    <p className={styles.image_description} >
-                      EVENTOS JUGO CLUB <span style={{fontWeight: '500'}}> &#8594; ¿Donde?, ¿Cuando?, ¿Como?</span>
-                    </p>
-                </div>
               </div>
             </Link>
-            <Link href="/club">
-              <div style={{textAlign: 'left', margin: 'auto',width: '100%', maxWidth: '800px'}}>  
-                <div>
-                  <div className={styles.image_container}>
-                  <Image
-                  src="/images/RIES_2555.jpg"
-                  alt='Placeholder'
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  placeholder="empty"
-                  loading="lazy"
-                  className={styles.image}
-                />
-                  <div>
-                      <p className={styles.image_description} >
-                        VINOS NATURALES <span style={{fontWeight: '500'}}> &#8594; ¿Que es el vino natural?</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className={styles.page__section}>
+            <div className={styles.page__section_slide_info}>
+              <p className={styles.paragraph}>17, 16 y 17 de Agosto</p>
+              <p style={{fontStyle: 'italic'}}>Buenos Aires</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat erat et dignissim accumsan. Donec finibus lacus non magna accumsan, non auctor orci tempus. Phasellus ultrices, sapien in efficitur imperdiet, turpis ex tristique est, in convallis felis leo vel dui. Sed imperdiet, nunc vel sodales accumsan, justo mauris faucibus justo, ut dignissim quam turpis in arcu. Vivamus et nisi nec arcu vestibulum ultrices. Integer eget ex ut sapien dignissim fringilla. Suspendisse vitae imperdiet odio, eleifend vulputate leo. Pellentesque mauris nibh, aliquet quis enim id, vehicula malesuada dolor.</p>
+              <a><p>COMPRAR TICKETS</p></a>
+            </div>
+            </div>
           </div>
         </div>
       </motion.div>
+      <Footer/>
     </main>
+    
   );
 }

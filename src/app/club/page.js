@@ -1,4 +1,5 @@
 "use client"
+import Footer from "../components/footer";
 import Image from "next/image";
 import styles from "../page.module.css";
 import Link from "next/link";
@@ -57,32 +58,29 @@ export default function Club() {
           </div>
           <div className={styles.page} id="start">
             <div className={styles.page__section}>
-              <p className={styles.title}>COMING <span className={styles.blink}>SOON!</span></p>
+              <p className={styles.title} style={{textAlign: 'center'}}>COMING <span className={styles.blink}>SOON!</span></p>
               <div className={styles.page__section_container2}>
                 <div className={styles.page__section_container_box}>
-                  <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center'}}>Nuevos vinos cada mes</p>
-                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center'}}>Explora nuevos vinos cada mes de nuestra curada selección Jugos! </p>
+                  <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Nuevos vinos cada mes</p>
+                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '1rem'}}>Explora nuevos vinos cada mes de nuestra curada selección Jugos! </p>
 
                 </div>
                 <div className={styles.page__section_container_box}>
-                  <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center'}}>Desde $49.900 al mes</p>
-                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center'}}> Experiencias de vino de alta calidad con envíos a tu piacere.</p>
+                  <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Desde $49.900 al mes</p>
+                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '1rem'}}> Experiencias de vino de alta calidad con envíos a tu piacere.</p>
                 </div>
                 <div className={styles.page__section_container_box}>
-                  <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center'}}>Elegí el plan de tu estilo favorito!</p>
-                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center'}}>Elegí de nuestros estilos de plan, los estilos que más te gustan! </p>
+                  <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Elegí el plan de tu estilo favorito!</p>
+                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '1rem'}}>Elegí de nuestros estilos de plan, los estilos que más te gustan! </p>
                 </div>
               </div>
-          </div>
-          <div className={styles.page__section}>
-            <div className={styles.page__section_paragraphcontainer} style={{border: 'none'}}>
-              <p className={`${styles["subtitle"]}`} style={{maxWidth: '100%'}}><span style={{color: '#e3384f'}}>Nuestro club funciona a través de una suscripción mensual de vinos nuevos cada mes.</span></p>
-              <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Al ser miembro del club, podrás obtener beneficios en la tienda, envíos gratis y participar de eventos y catas especiales.
-              <br></br>
-              &#8594; Cada mes se hará una selección curada de nuestras piezas favoritas puestas en diálogo entre sí, un acercamiento didáctico y comprensivo a todos los matices que dan a cada botella su particularidad. Entregaremos pequeños recortes de este archivo junto con la bio y el desglose de todas las notas y sensaciones que cada selección puede ofrecer. 
-              </p>
-            </div>
-
+              <div className={styles.center} >
+              <Link href="#planes">
+                <p className={styles.button}>
+                  SUSCRIBITE AHORA
+                </p>
+              </Link>
+              </div>
           </div>
           {/* <div className={styles.page__section}>
           <div className={styles.center}>
@@ -94,8 +92,8 @@ export default function Club() {
             </div>
           </div> */}
           <div className={styles.page__section} id="planes">
-              <div className={styles.page__section_container} style={{border: 'none'}}>
-                <div  className={styles.page__section_product}>
+              <div className={styles.page__section_container} style={{borderTop: "2px solid black", borderBottom: "none", paddingTop: '5rem'}}>
+                <div  className={styles.page__section_product} style={{borderLeft: 'none'}}>
                   <p className={styles.title_home} style={{fontSize: "4rem", lineHeight: "3rem", textAlign: 'center'}}>PLAN #1</p>
                   <p className={styles.paragraph} style={{textAlign: 'center'}}>Elegí de nuestros estilos de plan, los estilos que más te gustan! </p>
                   <div className={styles.center}>
@@ -140,6 +138,16 @@ export default function Club() {
               </div>
             </div>
             <div className={styles.page__section}>
+            <div className={styles.page__section_paragraphcontainer} style={{border: 'none'}}>
+              <p className={`${styles["subtitle"]}`} style={{maxWidth: '100%'}}><span style={{color: '#e3384f'}}>Nuestro club funciona a través de una suscripción mensual de vinos nuevos cada mes.</span></p>
+              <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Al ser miembro del club, podrás obtener beneficios en la tienda, envíos gratis y participar de eventos y catas especiales.
+              <br></br>
+              &#8594; Cada mes se hará una selección curada de nuestras piezas favoritas puestas en diálogo entre sí, un acercamiento didáctico y comprensivo a todos los matices que dan a cada botella su particularidad. Entregaremos pequeños recortes de este archivo junto con la bio y el desglose de todas las notas y sensaciones que cada selección puede ofrecer. 
+              </p>
+            </div>
+
+          </div>
+            <div className={styles.page__section}>
               <div className={styles.center} >
               <Link href="/events">
                 <p className={styles.button}>
@@ -150,6 +158,7 @@ export default function Club() {
             </div>
         </div>
         </motion.div>
+        <Footer/>
       </main>
     );
   }

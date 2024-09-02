@@ -1,4 +1,5 @@
 "use client"
+import Footer from "../components/footer";
 import Image from "next/image";
 import styles from "../page.module.css";
 import Link from "next/link";
@@ -18,35 +19,22 @@ export default function Events() {
           x: { duration: 1.55 },
           delay: 0.75
         }}>
-          <div>
-            <Image
-              src="/images/DSCF8907 2.jpg"
-              alt="Background"
-              width={0}
-              height={0}
-              priority
-              unoptimized
-              style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0rem', pointerEvents: 'none' }}
-            />
-          </div>
-          <div style={{height: '80vH'}}></div>
-          <div className={styles.division}>
-          </div>
           <div className={styles.page}>
           <div className={styles.page__section}>
-          {/* <Image
-                  src="/houseOfWines.png"
+              <p className={styles.title}>Events</p>
+              <div style={{borderBottom: '1px solid black', borderTopLeftRadius: "20px 50px"}} className={styles.page__section_paragraphcontainer}>
+                <div>
+                <Image
+                  src="/swan.png"
                   alt="Background"
                   width={0}
                   height={0}
                   priority
                   unoptimized
-                  className={`${styles["devil"]} ${styles["g"]}`}
-                  style={{maxWidth: '23rem',width: '23rem', transform: "rotate(45deg)"}}
-                /> */}
-              <p className={styles.title}>Events</p>
-              <div style={{borderBottom: '1px solid black', borderTopLeftRadius: "20px 50px"}} className={styles.page__section_paragraphcontainer}>
+                  className={`${styles["devil"]} ${styles["swan"]}`}
+                />
                 <p className={styles.subtitle}>Es esencial para poder difundir el arte de la producción del vino natural y orgánico, <span style={{color: '#e3384f '}}>centrar nuestra labor en la experiencia de compartir esta bebida espirituosa en un ambiente íntimo o social.</span></p>
+                </div>
                 <p className={styles.paragraph}><span className={styles.paragraph_arrow}>&#8594;</span> Desde Jugo Club elaboramos una serie de situaciones y ambientes que muchas veces se adaptan a los formatos de eventos artísticos, gatherings, o cócteles especiales para las agendas de quienes busquen crear encuentros diseñados hasta el último detalle.  </p>
               </div>
               <div style={{borderBottom: '1px solid black'}} className={styles.page__section_container2}>
@@ -200,6 +188,7 @@ export default function Events() {
             </div> */}
           </div>
         </motion.div>
+        <Footer/>
       </main>
     );
   }

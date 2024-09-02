@@ -1,8 +1,10 @@
 "use client"
+import contactForm from "../components/contactForm";
 import Image from "next/image";
 import styles from "../page.module.css";
 import Link from "next/link";
 import {motion} from 'framer-motion';
+import ContactForm from "../components/contactForm";
 
 export default function Contact() {
 
@@ -33,30 +35,14 @@ export default function Contact() {
               />
                 <p>GO?</p>
               </div>
-              <div className={styles.jugo_subtitle}>
+              {/* <div className={styles.jugo_subtitle}>
                 <p>Escribinos!
                   <br></br>
                 <a>mateo@jugoclub.wine</a>
                 </p>
-              </div>
-              {/* <div style={{textAlign: 'left', margin: 'auto',width: '100%', maxWidth: '700px'}}>
-                <Image
-                  src="/images/DSCF8972 2.jpg"
-                  alt='Placeholder'
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  placeholder="empty"
-                  loading="lazy"
-                  style={{height: "auto", width: "100%", maxWidth: "700px", margin: "auto", borderRadius: '10px'}}
-                />
-                <div>
-                    <p className={styles.description}>
-                      MATEO 
-                    </p>
-                </div>
               </div> */}
             </div>
+            <ContactForm/>
           </div>
         </motion.div>
       </main>
