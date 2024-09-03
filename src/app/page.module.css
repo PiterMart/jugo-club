@@ -156,7 +156,8 @@
 .button{
   font-family: Neue;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   width: auto;
   color: black;
   border: 2px solid black;
@@ -505,7 +506,7 @@
 .footer__section_container{
   margin-top: 0rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 1rem;
@@ -518,7 +519,7 @@
 }
 .footer__section{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
   text-align: left;
   margin-top: 2rem;
