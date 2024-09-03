@@ -106,7 +106,7 @@ export default function Home() {
             <p className={styles.paragraph}>Nuestro club funciona a través de una suscripción mensual de vinos nuevos cada mes.</p>
             <Link href="/club">
               <p>UNIRSE</p>
-              </Link>
+            </Link>
             </div>
             </div>
           </div>

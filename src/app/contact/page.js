@@ -19,7 +19,7 @@ export default function Contact() {
           x: { duration: 1.55 },
           delay: 0.75
         }}>
-          <div className={styles.page}>
+          <div className={styles.page} style={{gap: '2.5rem'}}>
             <div className={styles.page__section} style={{gap: '0rem'}}>
               <div className={styles.jugo}>
                 <p>J</p>
@@ -35,12 +35,12 @@ export default function Contact() {
               />
                 <p>GO?</p>
               </div>
-              {/* <div className={styles.jugo_subtitle}>
+              <div className={styles.jugo_subtitle}>
                 <p>Escribinos!
                   <br></br>
-                <a>mateo@jugoclub.wine</a>
+                {/* <a>mateo@jugoclub.wine</a> */}
                 </p>
-              </div> */}
+              </div>
             </div>
             <ContactForm/>
           </div>

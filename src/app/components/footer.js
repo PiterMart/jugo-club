@@ -40,9 +40,9 @@ export default function Footer(){
         </div>
       <div className={styles.footer__section}>
         <div className={styles.footer__section_container}>
-                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Instagram</p>
-                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Facebook</p>
-                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Tienda</p>
+                  <Link href="https://www.instagram.com/jugo.club/" target="blank"><p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Instagram</p></Link>
+                  {/* <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Shop</p>
+                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}></p> */}
 
         </div>
       </div>

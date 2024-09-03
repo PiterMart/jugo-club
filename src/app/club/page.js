@@ -61,16 +61,16 @@ export default function Club() {
               <p className={styles.title} style={{textAlign: 'center'}}>COMING <span className={styles.blink}>SOON!</span></p>
               <div className={styles.page__section_container2}>
                 <div className={styles.page__section_container_box}>
-                  <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Nuevos vinos cada mes</p>
+                  <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem', lineHeight: '2rem'}}>Nuevos vinos cada mes</p>
                   <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '1rem'}}>Explora nuevos vinos cada mes de nuestra curada selección Jugos! </p>
 
                 </div>
                 <div className={styles.page__section_container_box}>
-                  <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Desde $49.900 al mes</p>
+                  <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem', lineHeight: '2rem'}}>Desde $49.900 al mes</p>
                   <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '1rem'}}> Experiencias de vino de alta calidad con envíos a tu piacere.</p>
                 </div>
                 <div className={styles.page__section_container_box}>
-                  <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Elegí el plan de tu estilo favorito!</p>
+                  <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem', lineHeight: '2rem'}}>Elegí el plan de tu estilo favorito!</p>
                   <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '1rem'}}>Elegí de nuestros estilos de plan, los estilos que más te gustan! </p>
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function Club() {
             </div>
           </div> */}
           <div className={styles.page__section} id="planes">
-              <div className={styles.page__section_container} style={{borderTop: "2px solid black", borderBottom: "none", paddingTop: '5rem'}}>
+              <div className={styles.page__section_container} style={{borderTop: "2px solid black", borderBottom: "none", paddingTop: '5rem', marginTop: '3rem'}}>
                 <div  className={styles.page__section_product} style={{borderLeft: 'none'}}>
                   <p className={styles.title_home} style={{fontSize: "4rem", lineHeight: "3rem", textAlign: 'center'}}>PLAN #1</p>
                   <p className={styles.paragraph} style={{textAlign: 'center'}}>Elegí de nuestros estilos de plan, los estilos que más te gustan! </p>

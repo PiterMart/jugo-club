@@ -9,7 +9,7 @@ export default function ContactForm() {
       setResult("Enviando....");
       const formData = new FormData(event.target);
   
-      formData.append("access_key", "5708937d-8c8d-405f-b8d6-dbd75827398e");
+      formData.append("access_key", "4d6ad1c4-aa86-4293-b1ae-be61133e989b");
   
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -32,12 +32,12 @@ export default function ContactForm() {
         <form onSubmit={onSubmit} className={styles.form}>
           <input type="hidden" name="access_key" value=""/>
           {/* <p>Nombre</p> */}
-          <input type="text" name="Name" placeholder="name" required/>
+          <input type="text" name="Name" placeholder="Your name" required/>
           {/* <p>Email</p> */}
-          <input type="email" name="Email" placeholder="email" required/>
+          <input type="email" name="Email" placeholder="Your email" required/>
           {/* <p>MENSAJE</p> */}
-          <textarea name="message" placeholder="Message" required></textarea>
-          <span style={{height: '2.5rem', color: 'gray'}}>{result}</span>
+          <textarea name="message" placeholder="Your message" required></textarea>
+          <span style={{height: '2.5rem', color: 'gray', fontFamily: "Vigo", fontSize: "1.5rem"}}>{result}</span>
           <button className={styles.button} type="submit">ENVIAR</button>
         </form>
       </div>

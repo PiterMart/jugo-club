@@ -17,17 +17,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <body className={inter.className}>
       <Image
-                src="/jugocup.png"
+                src="/houseOfWines.png"
                 alt='Placeholder'
                 width={0}
                 height={0}
                 sizes="100vw"
                 placeholder="empty"
                 loading="lazy"
-                style={{height: "25r100vhem", width: "auto", position: 'absolute', top: '10rem', zIndex: '-100', margin: "auto"}}
+                style={{height: "5rem", width: "auto", position: 'absolute', zIndex: '-100', margin: "auto", top: "7rem", transform: "translateY(-50%)", verticalAlign: "middle", left: '10%' }}
               />
-      <body className={inter.className}>
         <Nav/>
         {children}
       </body>
