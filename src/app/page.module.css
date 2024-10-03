@@ -280,9 +280,10 @@
   height: 15vh;
   background-color: transparent;
   color: black;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 1rem;
   border-radius: 10px;
+  border: solid 2px;
 }
 .form input{
   font-family: NeueDisp;
