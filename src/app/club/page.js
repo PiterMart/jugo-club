@@ -32,7 +32,7 @@ export default function Club() {
               />
             </div>
             <div style={{height: '100VH',width: '100vw', background: 'transparent',  }}>
-              <div className={styles.page__section} style={{marginTop: '0px', paddingTop: '10rem', gap: '2.5rem'}}>
+              <div className={styles.page__section} style={{marginTop: '0px', paddingTop: '10rem', gap: '4.5rem'}}>
                 <p  className={`${styles["subtitle"]} ${styles["glow"]}`}>ESTAS ENTRANDO</p>
                 <div style={{margin:'auto', marginBottom: "-5rem"}} className={styles.floating}>
                       <Image

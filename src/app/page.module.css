@@ -911,7 +911,8 @@
     border-left: none;
   }
   .page__section_container2{
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     max-width: 100%;
     margin: auto;
     text-align: left;
