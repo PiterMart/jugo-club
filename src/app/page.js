@@ -105,7 +105,7 @@ export default function Home() {
             <div className={styles.page__section_slide_info}>
             <p className={styles.paragraph}>Nuestro club funciona a través de una suscripción mensual de vinos nuevos cada mes.</p>
             <Link href="/club">
-              <p>UNIRSE</p>
+              <p>UNIRSE &#8594;</p>
             </Link>
             </div>
             </div>
@@ -135,7 +135,7 @@ export default function Home() {
               <p className={styles.paragraph}>17, 16 y 17 de Agosto</p>
               <p style={{fontStyle: 'italic'}}>Buenos Aires</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat erat et dignissim accumsan. Donec finibus lacus non magna accumsan, non auctor orci tempus. Phasellus ultrices, sapien in efficitur imperdiet, turpis ex tristique est, in convallis felis leo vel dui. Sed imperdiet, nunc vel sodales accumsan, justo mauris faucibus justo, ut dignissim quam turpis in arcu. Vivamus et nisi nec arcu vestibulum ultrices. Integer eget ex ut sapien dignissim fringilla. Suspendisse vitae imperdiet odio, eleifend vulputate leo. Pellentesque mauris nibh, aliquet quis enim id, vehicula malesuada dolor.</p>
-              <a><p>COMPRAR TICKETS</p></a>
+              <a><p>COMPRAR TICKETS &#8594;</p></a>
             </div>
             </div>
           </div>

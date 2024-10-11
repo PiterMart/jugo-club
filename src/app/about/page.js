@@ -57,7 +57,7 @@ export default function About() {
                 </div>
                 <p className={styles.paragraph}><span className={styles.paragraph_arrow}>&#8594;</span> Redefiniendo el <span style={{fontStyle: 'italic', fontWeight: 'bolder'}}>“buen beber”</span> academicista y acartonado, creemos en servir vino de forma lúdica  y accesible para nunca más escuchar la temerosa frase: <span style={{fontStyle: 'italic', fontWeight: 'bolder'}}>“Yo no sé nada de vinos”</span>, y dar rienda suelta al deleite desprejuiciado de este jugo ancestral.</p>
               </div>
-              <div style={{borderBottom: '1px solid black', gap: "2.5rem"}} className={styles.page__section_container2}>
+              <div style={{borderBottom: '1px solid black'}} className={styles.page__section_container2}>
                 <div style={{pointerEvents: 'none'}} className={styles.image_container}>
                   <video autoPlay muted loop playsInline className={styles.image} style={{ overflow: 'hidden', pointerEvents: 'none', margin: 'auto', bottom: '0' }}>
                     <source src="/images/vineyard1.mp4" />
@@ -69,7 +69,7 @@ export default function About() {
                 </div>
               </div>
               <div style={{borderBottom: '1px solid black', paddingBottom: '1.5rem', display: 'flex', flexDirection: 'column'}} className={styles.page__section_paragraphcontainer}>
-              <p className={styles.subtitle} style={{maxWidth: '100%'}}><span style={{fontWeight: '1000', fontSize: '5rem', lineHeight: '4rem', fontFamily: 'Neue'}}>Somos <span style={{color: '#e3384f '}}>Cavistas de oficio</span>,</span> especializados en la curaduría y manejo de una <span style={{fontStyle: 'italic'}}>selección atípica</span>, tendiendo puentes con pequeños productores con una impronta irreverente.</p>
+              <p className={styles.subtitle} style={{maxWidth: '100%'}}><span style={{fontWeight: '1000', fontFamily: 'Neue'}}>Somos <span style={{color: '#e3384f '}}>Cavistas de oficio</span>,</span> especializados en la curaduría y manejo de una <span style={{fontStyle: 'italic'}}>selección atípica</span>, tendiendo puentes con pequeños productores con una impronta irreverente.</p>
               <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Nuestra labor incluye <span style={{ fontWeight: '500'}}>seleccionar y conocer en profundidad cada etiqueta</span>, su origen, proceso de elaboración dialogando con sus creadores para transmitir la particularidad de sus vinos.
               <br></br>
               Entender sus características únicas nos permite<span style={{ fontWeight: '500'}}> asesorar y guiar a nuestros bebedores de forma personalizada.</span>
