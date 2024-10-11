@@ -20,7 +20,7 @@ export default function About() {
           delay: 0.75
         }}>
           <div style={{  width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none', background: '#e3384f'}}>
-            <div>
+            {/* <div>
               <Image
                 src="/VINEYARD WALLPAPER.jpg"
                 alt="Background"
@@ -30,13 +30,13 @@ export default function About() {
                 unoptimized
                 style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0rem', pointerEvents: 'none' }}
               />
-            </div>
+            </div> */}
           </div>
-          <a href="#start">
+          {/* <a href="#start">
             <div style={{height: '80vH'}}></div>
-          </a>
-          <div className={styles.division}>
-          </div>
+          </a> */}
+          {/* <div className={styles.division}>
+          </div> */}
           <div className={styles.page} id="start">
             <div className={styles.page__section}>
               <p className={styles.title}>About us</p>

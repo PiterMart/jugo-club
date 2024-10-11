@@ -326,7 +326,7 @@
   pointer-events: none;
   margin: 0px;
   padding: 0px;
-  top: 78rem;
+  top: 8vh;
 }
 .swan{
   top: 25rem;
@@ -406,7 +406,7 @@
 /*NAVBAR*/
 .nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   position: fixed;
   font-size: 20px;
@@ -705,7 +705,9 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-
+  .page{
+    margin-bottom: -1rem;
+  }
   .title{
     font-family: Vigo;
     font-size: 3rem;
@@ -719,8 +721,8 @@
     max-width: 80%;
   }
   .title_home{
-    font-size: 3.5rem;
-    line-height: 2.75rem;
+    font-size: 3rem;
+    line-height: 2.5rem;
     border-bottom: none;
   }
   .page__home_text{
@@ -771,7 +773,7 @@
 }
 /*STICKERS*/
 .devil{
-  top: 105vh;
+  top: 8vh;
   width: 12rem;
   height: auto;
   z-index: 1;
@@ -832,13 +834,13 @@
   }
   .logo{
     height: 100%;
-    max-width: 500px; 
+    max-width: 300px; 
   }
   .image{
     max-width: 100%;
   }
   .image_home{
-    max-width: 500px;
+    max-width: 450px;
     margin-right: -5rem;
 
   }
@@ -935,6 +937,7 @@
     font-size: 30px;
     border-bottom: none;
     padding-left: 1rem;
+    justify-content: space-between;
   }
   .nav__list{
     height: auto;
