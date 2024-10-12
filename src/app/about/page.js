@@ -64,7 +64,7 @@ export default function About() {
                   </video>
                   <div className={styles.image_container}>
                 <Image
-                  src="/VINOS.jpg"
+                  src="/vinos.jpg"
                   alt='Placeholder'
                   width={0}
                   height={0}
