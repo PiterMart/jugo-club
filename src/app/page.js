@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div style={{height: '100VH'}}>
         <div className={styles.center}>
-              <Link href="/shop">
+              <Link href="https://jugoclub.wine/">
                 <p className={styles.button2} style={{marginTop: '80vh', LEFT: '0'}}>
                    COMPRAR VINOS
                 </p>

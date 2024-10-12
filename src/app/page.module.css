@@ -139,6 +139,7 @@
   color: var(--secondary);
   text-align: left;
   z-index: 100;
+  width: 100%;
 }
 .paragraph2{
   font-family: "Neue";
@@ -326,10 +327,10 @@
   pointer-events: none;
   margin: 0px;
   padding: 0px;
-  top: 8vh;
+  top: 8rem;
 }
 .swan{
-  top: 16rem;
+  top: 10rem;
 }
 .butterfly2{
   width: 11rem;
@@ -344,7 +345,7 @@
 .image{
   height: auto;
   width: 600px;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0rem;
   margin-top: 0px;
 }
@@ -375,7 +376,7 @@
 }
 .image_container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.75rem;
 }
 .image_container:hover{
@@ -560,7 +561,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  padding-top: 15rem;
+  padding-top: 10rem;
 
 }
 .page__section{
@@ -569,7 +570,7 @@
   max-width: 1200px;
   margin: auto;
   margin-left: auto;
-  margin-right: auto;
+  margin-left: auto;
   gap: 2.5rem;
 }
 .page__section_slide{
@@ -595,13 +596,22 @@
   gap: 1.5rem;
 
 }
+.page__section_paragraphcontainerrow{
+
+  border-bottom: 1px solid black;
+  padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+
+}
 .page__section2{
   display: flex;
   flex-direction: column;
   max-width: 1200px;
   margin: auto;
   margin-left: auto;
-  margin-right: auto;
+  margin-left: auto;
   gap: 1rem;
   text-align: left;
   width: 100%;
@@ -632,7 +642,7 @@
 }
 .page__section_container2{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   display: flex;
   gap: 2.5rem;
@@ -683,7 +693,8 @@
   position: relative;
   text-align: center;
   max-width: 1200px;
-  border-bottom: 2px solid black
+  border-bottom: 2px solid black;
+  margin-left: auto;
 }
 .page__home2{
   display: flex;
@@ -697,6 +708,7 @@
   border-bottom: 2px solid black;
   justify-content: flex-end;
   margin-top: -25rem;;
+  margin-left: auto;
   border-bottom: none;
 }
 .page__home_text{
@@ -751,6 +763,9 @@
 
   .form__container{
     width: 100%;
+  }
+  .image_container{
+    flex-direction: column;
   }
   /* JUGO */
 .jugo{
@@ -872,6 +887,15 @@
     padding: 0px;
     gap: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+  .page__section_paragraphcontainerrow{
+
+    border-bottom: 1px solid black;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  
   }
   .page__section_paragraphcontainer2{
     gap: 0.75rem;

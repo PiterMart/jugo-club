@@ -60,22 +60,52 @@ export default function About() {
               <div style={{borderBottom: '1px solid black'}} className={styles.page__section_container2}>
                 <div style={{pointerEvents: 'none'}} className={styles.image_container}>
                   <video autoPlay muted loop playsInline className={styles.image} style={{ overflow: 'hidden', pointerEvents: 'none', margin: 'auto', bottom: '0' }}>
-                    <source src="/images/vineyard1.mp4" />
+                    <source src="/images/vineyard.mp4" />
                   </video>
-                </div>
-                <div className={styles.page__section_paragraphcontainer2}>
-                  <p className={`${styles["subtitle"]}`} style={{maxWidth: '100%', fontFamily: 'Neue'}}>Diseñamos <span style={{color: '#e3384f '}}>experiencias</span> y <span style={{color: '#e3384f '}}>catas</span>, ofrecemos <span style={{color: '#e3384f '}}>consultorías</span> para restaurantes,  y producimos <span style={{color: '#e3384f '}}>eventos a medida.</span></p>
-                  <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Nuestra <span style={{ fontWeight: '500'}}>misión</span> es brindar a los amantes y curiosos del vino, acceso fácil y rápido a vinos auténticos, elaborados con prácticas artesanales, de partidas limitadas y sin aditivos químicos.</p>
-                </div>
+                  <div className={styles.image_container}>
+                <Image
+                  src="/VINOS.jpg"
+                  alt='Placeholder'
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  placeholder="empty"
+                  loading="lazy"
+                  className={styles.image}
+                />
               </div>
-              <div style={{borderBottom: '1px solid black', paddingBottom: '1.5rem', display: 'flex', flexDirection: 'column'}} className={styles.page__section_paragraphcontainer}>
-              <p className={styles.subtitle} style={{maxWidth: '100%'}}><span style={{fontWeight: '1000', fontFamily: 'Neue'}}>Somos <span style={{color: '#e3384f '}}>Cavistas de oficio</span>,</span> especializados en la curaduría y manejo de una <span style={{fontStyle: 'italic'}}>selección atípica</span>, tendiendo puentes con pequeños productores con una impronta irreverente.</p>
-              <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Nuestra labor incluye <span style={{ fontWeight: '500'}}>seleccionar y conocer en profundidad cada etiqueta</span>, su origen, proceso de elaboración dialogando con sus creadores para transmitir la particularidad de sus vinos.
-              <br></br>
-              Entender sus características únicas nos permite<span style={{ fontWeight: '500'}}> asesorar y guiar a nuestros bebedores de forma personalizada.</span>
-               </p>
+                </div>
               </div>
             </div>
+            <div className={styles.page__section2}>
+          <div>
+          <p className={styles.subtitle} style={{maxWidth: '600px'}}><span style={{fontWeight: '1000', fontFamily: 'Neue'}}>Somos <span style={{color: '#e3384f '}}>Cavistas de oficio</span>,</span> especializados en la curaduría y manejo de una <span style={{fontStyle: 'italic'}}>selección atípica</span>, tendiendo puentes con pequeños productores con una impronta irreverente.</p>
+            </div>
+            <div className={styles.page__section_slide} >
+            <Link href="/events">
+              <div className={styles.image_container}>
+              <Image
+                  src="/botella.jpg"
+                  alt='Placeholder'
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  placeholder="empty"
+                  loading="lazy"
+                  className={styles.image}
+                />
+              </div>
+            </Link>
+            <div className={styles.page__section_slide_info}>
+            <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Nuestra labor incluye <span style={{ fontWeight: '500'}}>seleccionar y conocer en profundidad cada etiqueta</span>, su origen, proceso de elaboración dialogando con sus creadores para transmitir la particularidad de sus vinos.
+              <br></br>
+              Entender sus características únicas nos permite<span style={{ fontWeight: '500'}}> asesorar y guiar a nuestros bebedores de forma personalizada.</span>
+              </p>
+              <p className={`${styles["paragraph"]}`}> <span className={styles.paragraph_arrow}>&#8594;</span>Diseñamos <span style={{fontWeight: '500'}}>experiencias</span> y <span style={{fontWeight: '500'}}>catas</span>, ofrecemos <span style={{fontWeight: '500'}}>consultorías</span> para restaurantes,  y producimos <span style={{fontWeight: '500'}}>eventos a medida.</span></p>
+              <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Nuestra <span style={{ fontWeight: '500'}}>misión</span> es brindar a los amantes y curiosos del vino, acceso fácil y rápido a vinos auténticos, elaborados con prácticas artesanales, de partidas limitadas y sin aditivos químicos.</p>
+            </div>
+            </div>
+          </div>
             <div className={styles.page__section}>
               <div className={styles.center} >
               <Link href="/wine">
