@@ -19,10 +19,10 @@ export default function Club() {
           x: { duration: 1.55 },
           delay: 0.75
         }}>
-          <div style={{  width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none', background: '#e3384f'}}>
+          <div style={{  width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none',}}>
             <div>
               <Image
-                src="/STAIRWAY.jpg"
+                src="/HEAVENSKY.jpg"
                 alt="Background"
                 width={0}
                 height={0}
@@ -32,11 +32,10 @@ export default function Club() {
               />
             </div>
             <div style={{height: '100VH',width: '100vw', background: 'transparent',  }}>
-              <div className={styles.page__section} style={{marginTop: '0px', paddingTop: '10rem', gap: '4.5rem'}}>
-                <p  className={`${styles["subtitle"]} ${styles["glow"]}`}>ESTAS ENTRANDO</p>
-                <div style={{margin:'auto', marginBottom: "-5rem"}} className={styles.floating}>
+              <div className={styles.page__section} style={{marginTop: '0px', marginTop: '-2rem', gap: '4.5rem'}}>
+              <div className={`${styles["grapes"]} ${styles["floating"]}`}>
                       <Image
-                        src="/grape bunchfloat.png"
+                        src="/GRAPEHAND.png"
                         alt='Placeholder'
                         width={0}
                         height={0}
@@ -44,10 +43,13 @@ export default function Club() {
                         placeholder="empty"
                         loading="lazy"
                         className={styles.double__image}
-                        style={{maxWidth: '450px', filter: "drop-shadow(20px 20px 20px white)", margin: 'auto'}}
+                        style={{maxWidth: '800px', filter: "drop-shadow(20px 20px 20px white)", margin: 'auto'}}
                       />
                     </div>
-                <p className={`${styles["subtitle"]} ${styles["glow"]}`}>A UN MUNDO DE PLACER</p>
+                    <div>
+                      <p  className={`${styles["subtitle"]} ${styles["glow"]}`} style={{ maxWidth: '100%', fontSize: '3rem'}}>ESTÁS ENTRANDO</p>
+                      <p className={`${styles["subtitle"]} ${styles["glow"]}`} style={{ maxWidth: '100%'}}>A UN MUNDO DE PLACER</p>
+                    </div>
               </div>
             </div>
           </div>
@@ -77,7 +79,7 @@ export default function Club() {
               <div className={styles.center} >
               <Link href="#planes">
                 <p className={styles.button}>
-                  SUSCRIBITE AHORA
+                  WAITING LIST
                 </p>
               </Link>
               </div>

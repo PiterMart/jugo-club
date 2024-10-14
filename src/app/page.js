@@ -18,8 +18,13 @@ export default function Home() {
           delay: 0.75
         }}>
         <div>
-          <video autoPlay muted loop playsInline style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none', }}>
+          <video className={styles.desktopBanner} autoPlay muted loop playsInline style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none', }}>
             <source src="/JUGCLUB AUDIO 1.mp4" />
+          </video>
+        </div>
+        <div>
+          <video className={styles.mobileBanner} autoPlay muted loop playsInline style={{ width: '100%', height: '100%', position: 'fixed', objectFit: 'cover', zIndex: '-1', right: '0', bottom: '0', pointerEvents: 'none', }}>
+            <source src="/jugoclubAnimacionMobile.mp4" />
           </video>
         </div>
         <div style={{height: '100VH'}}>
@@ -113,14 +118,14 @@ export default function Home() {
           <div className={styles.page__section2}>
           <div>
               <p className={styles.image_description}>
-                EVENTOS JUGO CLUB <span style={{fontWeight: '500'}}> &#8594; ¿Donde?, ¿Cuando?, ¿Como?</span>
+                Proximo Evento <span style={{fontWeight: '500'}}> &#8594; Atlas Listening Club</span>
               </p>
             </div>
             <div className={styles.page__section_slide} >
             <Link href="/events">
               <div className={styles.image_container}>
                 <Image
-                  src="/images/DSCF8911 2.jpg"
+                  src="/atlas flyer.png"
                   alt='Placeholder'
                   width={0}
                   height={0}
@@ -132,13 +137,19 @@ export default function Home() {
               </div>
             </Link>
             <div className={styles.page__section_slide_info}>
-              <p className={styles.paragraph}>17, 16 y 17 de Agosto</p>
+              <p className={styles.paragraph}>5 y 6 de Octubre</p>
               <p style={{fontStyle: 'italic'}}>Buenos Aires</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat erat et dignissim accumsan. Donec finibus lacus non magna accumsan, non auctor orci tempus. Phasellus ultrices, sapien in efficitur imperdiet, turpis ex tristique est, in convallis felis leo vel dui. Sed imperdiet, nunc vel sodales accumsan, justo mauris faucibus justo, ut dignissim quam turpis in arcu. Vivamus et nisi nec arcu vestibulum ultrices. Integer eget ex ut sapien dignissim fringilla. Suspendisse vitae imperdiet odio, eleifend vulputate leo. Pellentesque mauris nibh, aliquet quis enim id, vehicula malesuada dolor.</p>
+              <p>— (03) AMBIENT: pioneros del género.
+
+                  Escucha atenta en sonido HI-FI de discos imprescindibles en los comienzos del 𝙖𝙢𝙗𝙞𝙚𝙣𝙩 en occidente y oriente, entre finales de los 70’s y comienzos de los 80’s.
+
+                  Sonarán discos de: 𝘽𝙧𝙞𝙖𝙣 𝙀𝙣𝙤, 𝙃𝙞𝙧𝙤𝙨𝙝𝙞 𝙔𝙤𝙨𝙝𝙞𝙢𝙪𝙧𝙖, 𝙃𝙖𝙧𝙤𝙡𝙙 𝘽𝙪𝙙𝙙 𝙮 𝙈𝙞𝙙𝙤𝙧𝙞 𝙏𝙖𝙠𝙖𝙙𝙖, entre otros, además hablaremos de cada obra.</p>
               <a><p>COMPRAR TICKETS &#8594;</p></a>
             </div>
             </div>
           </div>
+          
+          
         </div>
       </motion.div>
       <Footer/>

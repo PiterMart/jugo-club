@@ -79,7 +79,7 @@ export default function About() {
             </div>
             <div className={styles.page__section2}>
           <div>
-          <p className={styles.subtitle} style={{maxWidth: '600px'}}><span style={{fontWeight: '1000', fontFamily: 'Neue'}}>Somos <span style={{color: '#e3384f '}}>Cavistas de oficio</span>,</span> especializados en la curaduría y manejo de una <span style={{fontStyle: 'italic'}}>selección atípica</span>, tendiendo puentes con pequeños productores con una impronta irreverente.</p>
+          <p className={styles.subtitle} style={{maxWidth: '100%'}}><span style={{fontWeight: '1000', fontFamily: 'Neue'}}>Somos <span style={{color: '#e3384f '}}>Cavistas de oficio</span>,</span> especializados en la curaduría y manejo de una <span style={{fontStyle: 'italic'}}>selección atípica</span>, tendiendo puentes con pequeños productores con una impronta irreverente.</p>
             </div>
             <div className={styles.page__section_slide} >
             <Link href="/events">
