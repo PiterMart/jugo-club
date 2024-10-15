@@ -50,6 +50,7 @@ export default function About() {
                 <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Entender estos mandamientos a la hora de dirigir la mirada hacia los procesos de producción de una de las bebidas más ancestrales -<span style={{fontStyle: 'italic', fontWeight: 'bolder'}}> que nos ha acompañado como especie desde los albores de nuestros tiempos</span> - implica no sólo la construcción de una idea sobre lo hedonista y el deseo en general, sino comprender que la alquimia de un elixir tal tiene tanto de íntimo como de único a cada proceso. </p>
               </div>
             <div className={styles.page__section_container2}>
+            <div className={styles.image_container}>
                 <Image
                   src="/uvas.jpg"
                   alt='Placeholder'
@@ -59,8 +60,8 @@ export default function About() {
                   placeholder="empty"
                   loading="lazy"
                   className={styles.image}
-                  style={{maxWidth: '400px'}}
                 />
+              </div>
               <div className={styles.page__section_paragraphcontainer2} >
                 <p className={`${styles["big"]} ${styles["title"]}`} style={{fontSize: ""}}><span style={{color: '#e3384f '}}>UVAS</span></p>
                 <p  className={`${styles["paragraph"]} ${styles["paragraphwine"]}`} style={{}}> <span className={styles.paragraph_arrow}>&#8594;</span> La historia de un vino natural empieza en los viñedos, donde las uvas crecen <span style={{fontStyle: 'italic'}} >libres de pesticidas y herbicidas sintéticos.</span> La <span style={{fontWeight: 'bold'}}>viticultura orgánica y biodinámica</span> <span style={{fontStyle: 'italic'}}>promueve la biodiversidad, permitiendo que las uvas absorban la esencia del suelo y el entorno,</span> creando una conexión única con el mismo. Este concepto es lo que le da a los vinos pertenencia de lugar: <span style={{fontStyle: 'italic' , fontWeight: '200'}}>“Terruño” - el clima, el suelo, la altitud, y la biodiversidad.</span></p>
@@ -68,6 +69,7 @@ export default function About() {
             </div>
             <div style={{ paddingBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '5rem', borderBottom: 'none' }} className={styles.page__section_paragraphcontainer}>
               <div className={`${styles["page__section2"]} ${styles["page__section3"]}`} style={{padding: "0px"}}>
+                <div className={styles.image_container}>
                   <Image
                     src="/vinificacion.png"
                     alt='Placeholder'
@@ -77,21 +79,16 @@ export default function About() {
                     placeholder="empty"
                     loading="lazy"
                     className={styles.image}
-                    style={{maxWidth: '400px'}}
                   />
+                </div>
                   <div className={styles.page__section_paragraphcontainer3} style={{borderBottom: 'none'}}>
                     <p className={`${styles["big2"]} ${styles["title"]}`} style={{fontSize: "", color: "#e3384f", maxWidth:"100%"}}>VINIFICACIÓN</p>
-                    {/* <div>
-                      <p className={styles.subtitle} style={{fontSize: "60px", textAlign: 'right'}}><span style={{color: '#e3384f '}}>VINI-</span></p>
-                      <p className={styles.subtitle} style={{fontSize: "60px"}}><span style={{color: '#e3384f '}}>FICA-</span></p>
-                      <p className={styles.subtitle} style={{fontSize: "60px"}}><span style={{color: '#e3384f '}}>CIÓN</span></p>
-                    </div> */}
                     <p className={`${styles["paragraph2"]} ${styles["paragraphwine"]}`} style={{alignSelf: "flex-end"}} > <span className={styles.paragraph_arrow}>&#8594;</span>La transformación de la uva en vino es un <span style={{fontStyle: 'italic'}}>proceso delicado y respetuoso.</span> En la <span style={{fontWeight: 'bold'}}>vinificación natural,</span> las uvas se procesan utilizando sus propias levaduras indígenas o autóctonas, sin levaduras de laboratorio ni la adición de químicos. Este método minimalista permite que el vino desarrolle su verdadero carácter, resultando en una <span style={{fontStyle: 'italic'}} >bebida viva y saludable... </span> </p>
                   </div>
                 </div>
               </div>
               <div style={{ marginBottom: '5rem'}} className={styles.page__section_container2}>
-              {/* <div className={styles.page__section2}> */}
+              <div className={styles.image_container}>
                 <Image
                   src="/bottle.jpg"
                   alt='Placeholder'
@@ -101,9 +98,8 @@ export default function About() {
                   placeholder="empty"
                   loading="lazy"
                   className={styles.image}
-                  style={{maxWidth: '400px'}}
                 />
-              {/* </div> */}
+              </div>
               <div className={styles.page__section_paragraphcontainer2}>
                 <div>
                 <p className={`${styles["big"]} ${styles["title"]}`} style={{fontSize: ""}}><span style={{color: '#e3384f '}}>CRIANZA</span></p>
@@ -126,26 +122,3 @@ export default function About() {
       </main>
     );
   }
-  
-
-
-
-{/* <div className={styles.double__image_container}>
-<div style={{width: '100%'}}>
-  <Image
-    src="/images/42EDECD0-0F4E-4DF9-8DA6-FDD18931A272.JPG"
-    alt='Placeholder'
-    width={0}
-    height={0}
-    sizes="100vw"
-    placeholder="empty"
-    loading="lazy"
-    className={styles.double__image}
-  />
-</div>
-<div style={{width: '100%'}}>
-  <video autoPlay muted loop playsInline className={styles.double__image} style={{ width: '100%', maxWidth: '450px', height: 'auto', pointerEvents: 'none', margin: 'auto', bottom: '0' }}>
-    <source src="/images/mist.mp4" />
-  </video>
-</div>
-</div> */}

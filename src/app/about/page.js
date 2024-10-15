@@ -43,7 +43,7 @@ export default function About() {
               <div style={{borderBottom: '1px solid black', borderTopLeftRadius: "20px 50px"}} className={styles.page__section_paragraphcontainer}>
                 <div>
                 <Image
-                  src="/demon.png"
+                  src="/devil.svg"
                   alt="Background"
                   width={0}
                   height={0}
@@ -57,7 +57,7 @@ export default function About() {
                 </div>
                 <p className={styles.paragraph}><span className={styles.paragraph_arrow}>&#8594;</span> Redefiniendo el <span style={{fontStyle: 'italic', fontWeight: 'bolder'}}>“buen beber”</span> academicista y acartonado, creemos en servir vino de forma lúdica  y accesible para nunca más escuchar la temerosa frase: <span style={{fontStyle: 'italic', fontWeight: 'bolder'}}>“Yo no sé nada de vinos”</span>, y dar rienda suelta al deleite desprejuiciado de este jugo ancestral.</p>
               </div>
-              <div style={{borderBottom: '1px solid black'}} className={styles.page__section_container2}>
+              <div className={styles.page__section_container2}>
                 <div style={{pointerEvents: 'none'}} className={styles.image_container}>
                   <video autoPlay muted loop playsInline className={styles.image} style={{ overflow: 'hidden', pointerEvents: 'none', margin: 'auto', bottom: '0' }}>
                     <source src="/images/vineyard.mp4" />
@@ -103,11 +103,7 @@ export default function About() {
               </p>
               <p className={`${styles["paragraph"]}`}> <span className={styles.paragraph_arrow}>&#8594;</span>Diseñamos <span style={{fontWeight: '500'}}>experiencias</span> y <span style={{fontWeight: '500'}}>catas</span>, ofrecemos <span style={{fontWeight: '500'}}>consultorías</span> para restaurantes,  y producimos <span style={{fontWeight: '500'}}>eventos a medida.</span></p>
               <p className={styles.paragraph}> <span className={styles.paragraph_arrow}>&#8594;</span> Nuestra <span style={{ fontWeight: '500'}}>misión</span> es brindar a los amantes y curiosos del vino, acceso fácil y rápido a vinos auténticos, elaborados con prácticas artesanales, de partidas limitadas y sin aditivos químicos.</p>
-            </div>
-            </div>
-          </div>
-            <div className={styles.page__section}>
-              <div className={styles.center} >
+              <div className={styles.center} style={{marginTop: '25%'}}>
               <Link href="/wine">
                 <p className={styles.button}>
                   ¿QUE ES EL VINO NATURAL?
@@ -115,6 +111,17 @@ export default function About() {
               </Link>
               </div>
             </div>
+            </div>
+          </div>
+            {/* <div className={styles.page__section}>
+              <div className={styles.center} >
+              <Link href="/wine">
+                <p className={styles.button}>
+                  ¿QUE ES EL VINO NATURAL?
+                </p>
+              </Link>
+              </div>
+            </div> */}
           </div>
         </motion.div>
         <Footer/>

@@ -25,7 +25,7 @@ export default function Events() {
               <div style={{borderBottom: '1px solid black', borderTopLeftRadius: "20px 50px"}} className={styles.page__section_paragraphcontainer}>
                 <div>
                 <Image
-                  src="/swan.png"
+                  src="/swan.svg"
                   alt="Background"
                   width={0}
                   height={0}
@@ -59,7 +59,7 @@ export default function Events() {
             <div className={styles.page__section2}>
           <div>
               <p className={styles.image_description}>
-                UPCOMING EVENTS <span style={{fontWeight: '500'}}> &#8594; Atlas Listening Club</span>
+                UPCOMING EVENT <span style={{fontWeight: '500'}}> &#8594; Atlas Listening Club</span>
               </p>
             </div>
             <div className={styles.page__section_slide} >
@@ -78,9 +78,9 @@ export default function Events() {
               </div>
             </Link>
             <div className={styles.page__section_slide_info}>
-              <p className={styles.paragraph}>5 y 6 de Octubre</p>
+              <p className={styles.paragraph} style={{color: '#e3384f'}}>5 y 6 de Octubre</p>
               <p style={{fontStyle: 'italic'}}>Buenos Aires</p>
-              <p>— (03) AMBIENT: pioneros del género.
+              <p className={styles.paragraph}>— (03) AMBIENT: pioneros del género.
 
 Escucha atenta en sonido HI-FI de discos imprescindibles en los comienzos del 𝙖𝙢𝙗𝙞𝙚𝙣𝙩 en occidente y oriente, entre finales de los 70’s y comienzos de los 80’s.
 
