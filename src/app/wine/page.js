@@ -59,7 +59,7 @@ export default function About() {
                   sizes="100vw"
                   placeholder="empty"
                   loading="lazy"
-                  className={styles.image}
+                  className={`${styles["image"]} ${styles["imagewine"]}`}
                 />
               </div>
               <div className={styles.page__section_paragraphcontainer2} >
@@ -78,7 +78,7 @@ export default function About() {
                     sizes="100vw"
                     placeholder="empty"
                     loading="lazy"
-                    className={styles.image}
+                    className={`${styles["image"]} ${styles["imagewine"]}`}
                   />
                 </div>
                   <div className={styles.page__section_paragraphcontainer3} style={{borderBottom: 'none'}}>
@@ -97,7 +97,7 @@ export default function About() {
                   sizes="100vw"
                   placeholder="empty"
                   loading="lazy"
-                  className={styles.image}
+                  className={`${styles["image"]} ${styles["imagewine"]}`}
                 />
               </div>
               <div className={styles.page__section_paragraphcontainer2}>

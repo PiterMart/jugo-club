@@ -76,7 +76,7 @@ export default function Club() {
                   <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '1rem'}}>Elegí de nuestros estilos de plan, el que más te guste! </p>
                 </div>
               </div>
-              <div className={styles.page__section_paragraphcontainer} style={{border: 'none'}}>
+              <div className={styles.page__section_paragraphcontainer} style={{border: 'none', maxWidth: '600px', alignSelf: 'center'}}>
               <p className={`${styles["subtitle"]}`} style={{maxWidth: '100%', textAlign: 'center', margin: 'auto'}}><span style={{color: '#e3384f'}}>Nuestro club funciona a través de una suscripción mensual de vinos nuevos cada mes.</span></p>
               <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'left', margin: 'auto' }}> <span className={styles.paragraph_arrow}>&#8594;</span> Al ser miembro del club, podrás obtener beneficios en la tienda, envíos gratis y participar de eventos y catas especiales.
               <br></br>

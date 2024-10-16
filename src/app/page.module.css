@@ -238,7 +238,7 @@
 .logo{
   width: 100vh; 
   height: 100%;
-  max-width: 800px; 
+  max-width: 600px; 
 }
 .division{
   height: 10rem;
@@ -317,7 +317,7 @@
   font-size: 2rem;
   text-align: left;
   margin-right: 0rem;
-  margin-left: 13rem;
+  margin-left: 19rem;
 }
 .jugo_image{
   height: auto;
@@ -362,6 +362,9 @@
   max-width: 600px;
   margin: 0rem;
   margin-top: 0px;
+}
+.imagewine{ 
+  max-width: 450px;
 }
 .image_home{
   height: auto;
@@ -801,10 +804,12 @@
 }
 .jugo_subtitle{
   font-family: 'Neue';
-  font-size: 20px;
-  text-align: left;
-  margin-right: 0rem;
-  margin-left: 137px;
+    font-size: 20px;
+    text-align: left;
+    margin-right: 0rem;
+    margin-left: 127px;
+    font-weight: 500;
+    margin-top: -1rem;
 }
 .jugo_image{
   height: auto;
@@ -890,6 +895,9 @@
     max-width: 300px; 
   }
   .image{
+    max-width: 100%;
+  }
+  .imagewine{ 
     max-width: 100%;
   }
   .image_home{

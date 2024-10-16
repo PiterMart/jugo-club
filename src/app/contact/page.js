@@ -20,7 +20,7 @@ export default function Contact() {
           delay: 0.75
         }}>
           <div className={styles.page} style={{gap: '2.5rem'}}>
-            <div className={styles.page__section} style={{gap: '0rem'}}>
+            <div className={styles.page__section} style={{gap: '0rem', padding: "0"}}>
               <div className={styles.jugo}>
                 <p>J</p>
                 <Image
