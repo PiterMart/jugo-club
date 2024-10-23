@@ -69,11 +69,11 @@ export default function Events() {
             <div className={styles.page__section2}>
               <div>
                 <p className={styles.image_description}>
-                  UPCOMING EVENT <span style={{fontWeight: '500'}}> &#8594; Atlas Listening Club</span>
+                  LATEST EVENT <span style={{fontWeight: '500'}}> &#8594; Atlas Listening Club</span>
                 </p>
               </div>
               <div className={styles.page__section_slide} >
-                <Link href="/events">
+                <Link href="https://atlasatlas.com.ar/alc03" target="_blank">
                   <div className={styles.image_container}>
                     <Image
                       src="/atlas flyer.png"
@@ -94,7 +94,7 @@ export default function Events() {
                     Escucha atenta en sonido HI-FI de discos imprescindibles en los comienzos del 𝙖𝙢𝙗𝙞𝙚𝙣𝙩 en occidente y oriente, entre finales de los 70’s y comienzos de los 80’s.
                     Sonarán discos de: 𝘽𝙧𝙞𝙖𝙣 𝙀𝙣𝙤, 𝙃𝙞𝙧𝙤𝙨𝙝𝙞 𝙔𝙤𝙨𝙝𝙞𝙢𝙪𝙧𝙖, 𝙃𝙖𝙧𝙤𝙡𝙙 𝘽𝙪𝙙𝙙 𝙮 𝙈𝙞𝙙𝙤𝙧𝙞 𝙏𝙖𝙠𝙖𝙙𝙖, entre otros, además hablaremos de cada obra.
                   </p>
-                  <a><p>COMPRAR TICKETS &#8594;</p></a>
+                  <a href="https://atlasatlas.com.ar/alc03" target="_blank" ><p>REGISTRO &#8594;</p></a>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ export default function Events() {
                     />
                   </div>
                 </Link>
-                <Link href="/events">
+                <Link href="https://atlasatlas.com.ar/alc02" target="_blank">
                   <div className={styles.image_container}>
                     <Image
                       src="/atlas flyer2.png"

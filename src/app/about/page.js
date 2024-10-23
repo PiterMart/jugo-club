@@ -119,20 +119,18 @@ export default function About() {
             <div className={styles.page__section2}>
               <p className={styles.title}>¿Quien es Mateo?</p>
               <div className={styles.page__section_slide} >
-                <Link href="/events">
-                  <div className={styles.image_container}>
-                    <Image
-                        src="/mateo.jpg"
-                        alt='Placeholder'
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                        placeholder="empty"
-                        loading="lazy"
-                        className={styles.image}
-                      />
-                  </div>
-                </Link>
+                <div className={styles.image_container}>
+                  <Image
+                      src="/mateo.jpg"
+                      alt='Placeholder'
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      placeholder="empty"
+                      loading="lazy"
+                      className={styles.image}
+                    />
+                </div>
                 <div className={styles.page__section_slide_info}>
                   <p className={styles.subtitle} style={{maxWidth: '100%'}}>
                     <span style={{color: '#e3384f '}}> El recorrido de Mateo Garcia de Onrubia en el mundo de las bebidas espirituosas y los agasajos es extenso y plagado de anécdotas enriquecedoras.</span>
@@ -142,32 +140,35 @@ export default function About() {
                   </p>
                   <p className={styles.paragraph}>
                   Actualmente prepara el lanzamiento de su primer bar  
-                  <span style={{fontWeight: 'bold'}}>Acuario</span>
+                  <span style={{fontWeight: 'bold'}}> Acuario</span>
                   , en la icónica esquina del local principal del  Atelier Bonet.
                   </p>
+                  <Link href="https://www.instagram.com/acuariobar/" target="_blank">
+                    <p className={styles.button} style={{marginTop: '2rem'}}>
+                      ACUARIO BAR
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className={styles.page__section2}>
               <p className={styles.title}>Atelier Bonet</p>
               <div className={styles.page__section_slide} style={{borderBottom: 'none'}}>
-                <Link href="/events">
-                  <div className={styles.image_container}>
-                    <Image
-                        src="/atelier.jpg"
-                        alt='Placeholder'
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                        placeholder="empty"
-                        loading="lazy"
-                        className={styles.image}
-                      />
-                  </div>
-                </Link>
+                <div className={styles.image_container}>
+                  <Image
+                      src="/atelier.jpg"
+                      alt='Placeholder'
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      placeholder="empty"
+                      loading="lazy"
+                      className={styles.image}
+                    />
+                </div>
                 <div className={styles.page__section_slide_info}>
-                  <p className={styles.subtitle} style={{maxWidth: '100%'}}>
-                    <span style={{color: '#e3384f '}}> Nuestro HQ tiene lugar en el segundo piso de uno de los edificios más emblemáticos del modernismo de la ciudad de Buenos Aires: la Casa de estudios para artistas realizada por el arquitecto Antoni Bonet i Castellana en 1938 pensado desde sus orígenes como “un pequeño centro de relación”. </span>
+                  <p className={styles.subtitle} style={{maxWidth: '100%'}}> 
+                    Nuestro HQ tiene lugar en el segundo piso de uno de los edificios más emblemáticos del modernismo de la ciudad de Buenos Aires: la <span style={{color: '#e3384f '}}><a href="https://es.wikipedia.org/wiki/Casa_de_Estudios_para_Artistas" target="_blank">"Casa de estudios para artistas"</a></span> realizada por el arquitecto  <span style={{color: '#e3384f '}}><a href="https://es.wikipedia.org/wiki/Antonio_Bonet_Castellana" target="_blank">Antoni Bonet i Castellana</a></span> en 1938 pensado desde sus orígenes como “un pequeño centro de relación”.
                   </p>
                   <p className={styles.paragraph}>
                     Le rendimos honor a este impulso de idear una arquitectura relacional y  en ocasiones especiales abrimos nuestro espacio para la realización de eventos. Desde catas a social events, a lo que el imaginario dicte, nuestras puertas están abiertas. 
@@ -175,11 +176,11 @@ export default function About() {
                   <p className={styles.paragraph}>
                     En la planta baja de este edificio, en el local principal ubicado en la esquina del Atelier Bonet, Jugo Club dirige las etiquetas y experiencias del Bar Acuario.
                   </p>
-                  <Link href="">
-                      <p className={styles.button} style={{marginTop: '2rem'}}>
-                        ACUARIO BAR
-                      </p>
-                    </Link>
+                  <Link href="/events">
+                    <p className={styles.button} style={{marginTop: '2rem'}}>
+                      EVENTS
+                    </p>
+                  </Link>
                   <div className={styles.center} style={{marginTop: '25%'}}>
                   </div>
                 </div>

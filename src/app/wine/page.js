@@ -32,9 +32,7 @@ export default function About() {
               />
               <p className={styles.title}>
                 ¿Qué es el 
-                <span className={styles.blink}> 
-                  vino
-                </span> 
+                <span className={styles.blink}> vino </span> 
                 natural?
               </p>
               <div style={{borderBottom: '1px solid black', paddingBottom: '1.5rem', borderTopLeftRadius: "20px 50px"}} className={styles.page__section_paragraphcontainer}>

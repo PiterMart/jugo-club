@@ -76,12 +76,12 @@ export default function Club() {
                 </div>
               </div>
               <div className={styles.page__section_paragraphcontainer} style={{border: 'none', maxWidth: '600px', alignSelf: 'center'}}>
-                <p className={`${styles["subtitle"]}`} style={{maxWidth: '100%', textAlign: 'center', margin: 'auto'}}><span style={{color: '#e3384f'}}>Nuestro club funciona a través de una suscripción mensual de vinos nuevos cada mes.</span></p>
-                <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'left', margin: 'auto' }}> 
-                  <span className={styles.paragraph_arrow}>&#8594;</span> 
+                <p className={`${styles["subtitle"]}`} style={{maxWidth: '100%', textAlign: 'center', margin: 'auto'}}><span style={{color: '#e3384f', fontSize: '2.5rem'}}>Nuestro club funciona a través de una suscripción mensual de vinos nuevos cada mes.</span></p>
+                <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', margin: 'auto' }}> 
                   Al ser miembro del club, podrás obtener beneficios en la tienda, envíos gratis y participar de eventos y catas especiales.
                   <br></br>
-                  &#8594; Cada mes se hará una selección curada de nuestras piezas favoritas puestas en diálogo entre sí, un acercamiento didáctico y comprensivo a todos los matices que dan a cada botella su particularidad. Entregaremos pequeños recortes de este archivo junto con la bio y el desglose de todas las notas y sensaciones que cada selección puede ofrecer. 
+                  <br></br>
+                   Cada mes se hará una selección curada de nuestras piezas favoritas puestas en diálogo entre sí, un acercamiento didáctico y comprensivo a todos los matices que dan a cada botella su particularidad. Entregaremos pequeños recortes de este archivo junto con la bio y el desglose de todas las notas y sensaciones que cada selección puede ofrecer. 
                 </p>
               </div>
               <div className={styles.center} >
@@ -92,7 +92,7 @@ export default function Club() {
                 </Link>
               </div>
             </div>
-            <div className={styles.page__section} id="planes">
+            {/* <div className={styles.page__section} id="planes">
               <div className={styles.page__section_container} style={{borderTop: "2px solid black", borderBottom: "none", paddingTop: '5rem', marginTop: '3rem'}}>
                 <div  className={styles.page__section_product} style={{borderLeft: 'none'}}>
                   <p className={styles.title_home} style={{fontSize: "4rem", lineHeight: "3rem", textAlign: 'center'}}>PLAN #1</p>
@@ -137,7 +137,7 @@ export default function Club() {
                   $25.000.-</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </motion.div>
         <Footer/>
