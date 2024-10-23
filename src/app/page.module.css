@@ -84,6 +84,57 @@
   min-height: 100vh;
   cursor: url("/wine.svg"), auto;
 }
+.division{
+  height: 10rem;
+  background: rgb(209,176,100);
+  background: linear-gradient(180deg, rgba(209, 176, 100, 0) 0%, #fafafafa 100%)
+}
+/* EFFECTS */
+
+.glow{
+  font-family: Neue;
+  color: white;
+  text-align: center;
+  margin: auto;
+  /* text-shadow: black 5px 0px 10px; */
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 72px;
+}
+.blink{
+  animation: blink 3.5s infinite;
+  animation-fill-mode: both;
+}
+@keyframes blink{
+  0% { color: var(--accent); }
+  50% { color: var(--secondary); }
+  100% { color: var(--accent); }
+}
+
+.floating{
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 5px
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0)
+  }
+
+  50% {
+    transform: translateY(20px)
+  }
+
+  to {
+    transform: translate(0)
+  }
+}
+
+/*TYPES*/
+
 .title{
   font-family: Vigo;
   font-weight: 500;
@@ -115,28 +166,6 @@
   max-width: 50%;
   z-index: 5;
 }
-.glow{
-  font-family: Neue;
-  color: white;
-  text-align: center;
-  margin: auto;
-  /* text-shadow: black 5px 0px 10px; */
-  font-weight: 500;
-  font-size: 72px;
-  line-height: 72px;
-}
-.big{
-  font-size: 48px;
-  line-height: 48px;
-  text-align: left;
-  overflow-wrap: anywhere;
-}
-.big2{
-  text-align: right;
-  overflow-wrap: anywhere;
-  font-size: 48px;
-  line-height: 48px;
-}
 .paragraph{
   font-family: "Neue";
   font-weight: 400;
@@ -162,9 +191,20 @@
 .paragraphwine{ 
   max-width: 50%;
 }
-.paragraph_arrow{
-
+.big{
+  font-size: 48px;
+  line-height: 48px;
+  text-align: left;
+  overflow-wrap: anywhere;
 }
+.big2{
+  text-align: right;
+  overflow-wrap: anywhere;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+/* BUTTON*/
 
 .button{
   font-family: Neue;
@@ -183,7 +223,6 @@
   pointer-events: all;
   border-radius: 10px;
   background-color: transparent;
-  /* word-spacing: 0.5rem */
 }
 .button:hover{
   color: var(--primary);
@@ -235,16 +274,7 @@
   align-self: flex-end;
   padding-bottom: 4rem;
 }
-.logo{
-  width: 100vh; 
-  height: 100%;
-  max-width: 600px; 
-}
-.division{
-  height: 10rem;
-  background: rgb(209,176,100);
-  background: linear-gradient(180deg, rgba(209, 176, 100, 0) 0%, #fafafafa 100%)
-}
+
 /* FORM */
 .form__container{
   display: flex;
@@ -305,6 +335,7 @@
   letter-spacing: 1px;
 }
 /* JUGO */
+
 .jugo{
   font-family: 'Neue';
   font-weight: 400;
@@ -321,9 +352,9 @@
 }
 .jugo_image{
   height: auto;
-    width: 600px;
-    max-width: 11rem;
-    margin: auto;
+  width: 600px;
+  max-width: 11rem;
+  margin: auto;
 }
 /*STICKERS*/
 .devil{
@@ -472,37 +503,6 @@
   filter: brightness(5);
   padding-top: 10px
 }
-.blink{
-  animation: blink 3.5s infinite;
-  animation-fill-mode: both;
-}
-@keyframes blink{
-  0% { color: var(--accent); }
-  50% { color: var(--secondary); }
-  100% { color: var(--accent); }
-}
-
-.floating{
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-top: 5px
-}
-
-@keyframes floating {
-  0% {
-    transform: translate(0)
-  }
-
-  50% {
-    transform: translateY(20px)
-  }
-
-  to {
-    transform: translate(0)
-  }
-}
 
 /* FOOTER */
 .footer {
@@ -557,8 +557,14 @@
   justify-content: space-around;
   gap: 5rem;
 }
+.logo{
+  width: 100vh; 
+  height: 100%;
+  max-width: 600px; 
+}
 
 /*PAGE*/
+
 .main{
   padding: 0rem;
 

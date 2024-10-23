@@ -6,7 +6,6 @@ import {motion} from 'framer-motion';
 import { Suspense } from "react";
 
 export default function Contact() {
-
     return (
       <main className={styles.main}>
         <motion.div 

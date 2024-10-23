@@ -1,8 +1,8 @@
 export default function AboutLayout({ children }) {
     return (
-        <div>        
-          {children}
-        </div>
+      <div>        
+        {children}
+      </div>
     );
   }
   

@@ -24,21 +24,20 @@ export default function Contact() {
               <div className={styles.jugo}>
                 <p>J</p>
                 <Image
-                src="/monkU.jpg"
-                alt='Placeholder'
-                width={0}
-                height={0}
-                sizes="100vw"
-                placeholder="empty"
-                loading="lazy"
-                className={styles.jugo_image}
-              />
+                  src="/monkU.jpg"
+                  alt='Placeholder'
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  placeholder="empty"
+                  loading="lazy"
+                  className={styles.jugo_image}
+                />
                 <p>GO?</p>
               </div>
               <div className={styles.jugo_subtitle}>
                 <p>Escribinos!
                   <br></br>
-                {/* <a>mateo@jugoclub.wine</a> */}
                 </p>
               </div>
             </div>

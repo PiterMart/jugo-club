@@ -33,23 +33,23 @@ export default function Club() {
             </div>
             <div style={{height: '100VH',width: '100vw', background: 'transparent',  }}>
               <div className={styles.page__section} style={{marginTop: '0px', marginTop: '-2rem', gap: '0rem'}}>
-              <div className={`${styles["grapes"]} ${styles["floating"]}`}>
-                      <Image
-                        src="/GRAPEHAND.png"
-                        alt='Placeholder'
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                        placeholder="empty"
-                        loading="lazy"
-                        className={styles.double__image}
-                        style={{maxWidth: '800px', filter: "drop-shadow(20px 20px 20px white)", margin: 'auto'}}
-                      />
-                    </div>
-                    <div>
-                      <p  className={`${styles["subtitle"]} ${styles["glow"]}`} style={{ maxWidth: '100%', fontSize: '3rem', textShadow: "#7fc3ff 1px 0px 20px"}}>ESTÁS ENTRANDO</p>
-                      <p className={`${styles["subtitle"]} ${styles["glow"]}`} style={{ maxWidth: '100%', textShadow: "#7fc3ff 1px 0px 20px"}}>A UN MUNDO DE PLACER</p>
-                    </div>
+                <div className={`${styles["grapes"]} ${styles["floating"]}`}>
+                  <Image
+                    src="/GRAPEHAND.png"
+                    alt='Placeholder'
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    placeholder="empty"
+                    loading="lazy"
+                    className={styles.double__image}
+                    style={{maxWidth: '800px', filter: "drop-shadow(20px 20px 20px white)", margin: 'auto'}}
+                  />
+                </div>
+                <div>
+                  <p className={`${styles["glow"]}`} style={{ maxWidth: '100%', fontSize: '3rem', textShadow: "#7fc3ff 1px 0px 20px"}}>ESTÁS ENTRANDO</p>
+                  <p className={`${styles["glow"]}`} style={{ maxWidth: '100%', textShadow: "#7fc3ff 1px 0px 20px"}}>A UN MUNDO DE PLACER</p>
+                </div>
               </div>
             </div>
           </div>
@@ -65,7 +65,6 @@ export default function Club() {
                 <div className={styles.page__section_container_box}>
                   <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem', lineHeight: '2rem'}}>Nuevos vinos cada mes</p>
                   <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '1rem'}}>Explora nuevos vinos cada mes de nuestra curada selección Jugos! </p>
-
                 </div>
                 <div className={styles.page__section_container_box}>
                   <p className={styles.subtitle} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem', lineHeight: '2rem'}}>Desde $49.900 al mes</p>
@@ -77,21 +76,23 @@ export default function Club() {
                 </div>
               </div>
               <div className={styles.page__section_paragraphcontainer} style={{border: 'none', maxWidth: '600px', alignSelf: 'center'}}>
-              <p className={`${styles["subtitle"]}`} style={{maxWidth: '100%', textAlign: 'center', margin: 'auto'}}><span style={{color: '#e3384f'}}>Nuestro club funciona a través de una suscripción mensual de vinos nuevos cada mes.</span></p>
-              <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'left', margin: 'auto' }}> <span className={styles.paragraph_arrow}>&#8594;</span> Al ser miembro del club, podrás obtener beneficios en la tienda, envíos gratis y participar de eventos y catas especiales.
-              <br></br>
-              &#8594; Cada mes se hará una selección curada de nuestras piezas favoritas puestas en diálogo entre sí, un acercamiento didáctico y comprensivo a todos los matices que dan a cada botella su particularidad. Entregaremos pequeños recortes de este archivo junto con la bio y el desglose de todas las notas y sensaciones que cada selección puede ofrecer. 
-              </p>
-            </div>
-              <div className={styles.center} >
-              <Link href="/contact">
-                <p className={styles.button}>
-                  WAITING LIST
+                <p className={`${styles["subtitle"]}`} style={{maxWidth: '100%', textAlign: 'center', margin: 'auto'}}><span style={{color: '#e3384f'}}>Nuestro club funciona a través de una suscripción mensual de vinos nuevos cada mes.</span></p>
+                <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'left', margin: 'auto' }}> 
+                  <span className={styles.paragraph_arrow}>&#8594;</span> 
+                  Al ser miembro del club, podrás obtener beneficios en la tienda, envíos gratis y participar de eventos y catas especiales.
+                  <br></br>
+                  &#8594; Cada mes se hará una selección curada de nuestras piezas favoritas puestas en diálogo entre sí, un acercamiento didáctico y comprensivo a todos los matices que dan a cada botella su particularidad. Entregaremos pequeños recortes de este archivo junto con la bio y el desglose de todas las notas y sensaciones que cada selección puede ofrecer. 
                 </p>
-              </Link>
               </div>
-          </div>
-          {/* <div className={styles.page__section} id="planes">
+              <div className={styles.center} >
+                <Link href="/contact">
+                  <p className={styles.button}>
+                    WAITING LIST
+                  </p>
+                </Link>
+              </div>
+            </div>
+            <div className={styles.page__section} id="planes">
               <div className={styles.page__section_container} style={{borderTop: "2px solid black", borderBottom: "none", paddingTop: '5rem', marginTop: '3rem'}}>
                 <div  className={styles.page__section_product} style={{borderLeft: 'none'}}>
                   <p className={styles.title_home} style={{fontSize: "4rem", lineHeight: "3rem", textAlign: 'center'}}>PLAN #1</p>
@@ -136,11 +137,8 @@ export default function Club() {
                   $25.000.-</p>
                 </div>
               </div>
-            </div> */}
-            <div className={styles.page__section}>
-
+            </div>
           </div>
-        </div>
         </motion.div>
         <Footer/>
       </main>
