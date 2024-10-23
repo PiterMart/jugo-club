@@ -168,7 +168,7 @@ export default function About() {
                 </div>
                 <div className={styles.page__section_slide_info}>
                   <p className={styles.subtitle} style={{maxWidth: '100%'}}> 
-                    Nuestro HQ tiene lugar en el segundo piso de uno de los edificios más emblemáticos del modernismo de la ciudad de Buenos Aires: la <span style={{color: '#e3384f '}}><a href="https://es.wikipedia.org/wiki/Casa_de_Estudios_para_Artistas" target="_blank">"Casa de estudios para artistas"</a></span> realizada por el arquitecto  <span style={{color: '#e3384f '}}><a href="https://es.wikipedia.org/wiki/Antonio_Bonet_Castellana" target="_blank">Antoni Bonet i Castellana</a></span> en 1938 pensado desde sus orígenes como “un pequeño centro de relación”.
+                    Nuestro HQ tiene lugar en el segundo piso de uno de los edificios más emblemáticos del modernismo de la ciudad de Buenos Aires: la <span style={{color: '#e3384f '}}><a href="https://es.wikipedia.org/wiki/Casa_de_Estudios_para_Artistas" target="_blank"> Casa de estudios para artistas </a></span> realizada por el arquitecto  <span style={{color: '#e3384f '}}><a href="https://es.wikipedia.org/wiki/Antonio_Bonet_Castellana" target="_blank">Antoni Bonet i Castellana</a></span> en 1938 pensado desde sus orígenes como “un pequeño centro de relación”.
                   </p>
                   <p className={styles.paragraph}>
                     Le rendimos honor a este impulso de idear una arquitectura relacional y  en ocasiones especiales abrimos nuestro espacio para la realización de eventos. Desde catas a social events, a lo que el imaginario dicte, nuestras puertas están abiertas. 
