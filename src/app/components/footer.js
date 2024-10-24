@@ -30,7 +30,7 @@ export default function Footer(){
         
       </div>
       </Link>
-      <div className={styles.footer__section_container}>
+      <div className={styles.footer__section_container} style={{flexDirection: 'column'}}>
       <Link href="/contact">
         <p className={styles.button}>CONTACTO</p>
       </Link>
@@ -40,10 +40,11 @@ export default function Footer(){
         </div>
       <div className={styles.footer__section}>
         <div className={styles.footer__section_container}>
-                  <Link href="https://www.instagram.com/jugo.club/" target="blank"><p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Instagram</p></Link>
-                  {/* <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Shop</p>
-                  <p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}></p> */}
-
+        <Link href="/about" ><p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>About</p></Link>
+        <Link href="/club" ><p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Club</p></Link>
+        <Link href="/events" ><p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Events</p></Link>
+        <Link href="https://jugoclub.wine/" target="blank"><p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem', color: 'red'}}>Shop</p></Link>
+        <Link href="https://www.instagram.com/jugo.club/" target="blank"><p className={styles.paragraph} style={{maxWidth: '100%', textAlign: 'center', fontSize: '2rem'}}>Instagram</p></Link>
         </div>
       </div>
 

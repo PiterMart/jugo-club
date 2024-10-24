@@ -59,8 +59,7 @@ export default function Events() {
                   </p>
                   <p className={styles.paragraph}> 
                     <span className={styles.paragraph_arrow}>&#8594;</span> 
-                    Este servicio <span style={{fontStyle: 'italic', fontWeight: 'bolder'}}>tailor-made
-                    </span> 
+                    Este servicio <span style={{fontStyle: 'italic', fontWeight: 'bolder'}}>tailor-made </span> 
                     se adapta a las necesidades de cada cliente pudiendo ir desde una asesoría hasta la producción integral del evento.
                   </p>
                 </div>
@@ -105,7 +104,7 @@ export default function Events() {
                 </p>
               </div>
               <div className={styles.page__section_slide}>
-                <Link href="/events">
+                <Link href="/events/bonet-soho-house">
                   <div className={styles.image_container}>
                     <Image
                       src="/bonetsohohouse.jpg"

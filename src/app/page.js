@@ -144,7 +144,7 @@ export default function Home() {
                   Escucha atenta en sonido HI-FI de discos imprescindibles en los comienzos del 𝙖𝙢𝙗𝙞𝙚𝙣𝙩 en occidente y oriente, entre finales de los 70’s y comienzos de los 80’s.
                   Sonarán discos de: 𝘽𝙧𝙞𝙖𝙣 𝙀𝙣𝙤, 𝙃𝙞𝙧𝙤𝙨𝙝𝙞 𝙔𝙤𝙨𝙝𝙞𝙢𝙪𝙧𝙖, 𝙃𝙖𝙧𝙤𝙡𝙙 𝘽𝙪𝙙𝙙 𝙮 𝙈𝙞𝙙𝙤𝙧𝙞 𝙏𝙖𝙠𝙖𝙙𝙖, entre otros, además hablaremos de cada obra.
                 </p>
-                <a href="/events" target="_blank" ><p>EVENTS &#8594;</p></a>
+                <a href="/events" ><p>EVENTS &#8594;</p></a>
               </div>
             </div>
           </div>

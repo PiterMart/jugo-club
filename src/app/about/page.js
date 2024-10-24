@@ -139,13 +139,13 @@ export default function About() {
                   Comenzó en la escena neoyorquina, gestionando el programa de vinos naturales de Maison Premiere. En 2018, una residencia en un viñedo en la costa amalfitana profundizó su conocimiento en vinos. De vuelta en Buenos Aires, trabajó en Anchoita y Las Divinas, explorando la producción de vinos naturales locales. Eventualmente, decidió trabajar de forma independiente, fortaleciendo relaciones con productores y consumidores, y promoviendo el movimiento del vino natural en Argentina para fomentar una cultura de beber consciente.	
                   </p>
                   <p className={styles.paragraph}>
-                  Actualmente prepara el lanzamiento de su primer bar  
-                  <span style={{fontWeight: 'bold'}}> Acuario</span>
+                  Actualmente prepara el lanzamiento de su primer bar
+                  <span style={{fontWeight: 'bold'}}><a href="https://www.instagram.com/acuariobar/" target="_blank"> ACUARIO</a></span>
                   , en la icónica esquina del local principal del  Atelier Bonet.
                   </p>
-                  <Link href="https://www.instagram.com/acuariobar/" target="_blank">
+                  <Link href="/contact">
                     <p className={styles.button} style={{marginTop: '2rem'}}>
-                      ACUARIO BAR
+                      CONTACT
                     </p>
                   </Link>
                 </div>
@@ -181,25 +181,8 @@ export default function About() {
                       EVENTS
                     </p>
                   </Link>
-                  <div className={styles.center} style={{marginTop: '25%'}}>
-                  </div>
                 </div>
               </div>
-              {/* <div className={styles.page__section_slide} >
-                <div className={styles.image_container}>
-                  <Image
-                      src="/atelier2.jpg"
-                      alt='Placeholder'
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      placeholder="empty"
-                      loading="lazy"
-                      className={styles.image}
-                      style={{width: '100%', maxWidth: '100%'}}
-                    />
-                </div>
-              </div> */}
             </div>
           </div>
         </motion.div>

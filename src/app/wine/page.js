@@ -163,6 +163,62 @@ export default function About() {
                   </p>
                 </Link>
               </div>
+              <div style={{borderBottom: '1px solid black', marginTop: '3rem'}} className={styles.page__section_container2}>
+              <div className={styles.masonry__container}>
+                <div className={styles.masonry__galery} style={{ maxWidth: '90vw', margin: 'auto'}}>
+                  <div className={styles.image_container}>
+                    <Image
+                      className={styles.masonry__image}
+                      src="/natural-wine/natural-wine1.JPG"
+                      alt="Bonet Soho House Registro"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                    />
+                  </div>
+                  <div className={styles.image_container}>
+                    <Image
+                      className={styles.masonry__image}
+                      src="/natural-wine/natural-wine2.JPG"
+                      alt="Bonet Soho House Registro"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                    />
+                  </div>
+                  <div className={styles.image_container}>
+                      <video autoPlay muted loop playsInline className={styles.masonry__image}>
+                        <source src="/natural-wine/mist.mp4" />
+                      </video>
+                  </div>
+                  <div className={styles.image_container}>
+                    <Image
+                      className={styles.masonry__image}
+                      src="/natural-wine/natural-wine3.JPG"
+                      alt="Bonet Soho House Registro"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                    />
+                  </div>
+                  <div className={styles.image_container}>
+                    <Image
+                      className={styles.masonry__image}
+                      src="/natural-wine/natural-wine4.JPG"
+                      alt="Bonet Soho House Registro"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                    />
+                  </div>
+                  <div className={styles.image_container}>
+                      <video autoPlay muted loop playsInline className={styles.masonry__image}>
+                        <source src="/natural-wine/natural-winevideo4.mp4" />
+                      </video>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
         </motion.div>
